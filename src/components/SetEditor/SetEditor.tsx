@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Modal,
   Form,
@@ -62,6 +62,24 @@ const SetEditor: React.FC<SetEditorProps> = ({
     point: number;
     question: Question | null;
   } | null>(null);
+
+  // Update set state when initialSet changes or modal opens
+  useEffect(() => {
+    if (visible) {
+      if (initialSet) {
+        setSet(initialSet);
+      } else {
+        setSet({
+          id: uuidv4(),
+          name: '',
+          description: '',
+          finalRoundEnabled: false,
+          categories: [],
+          finalRoundQuestions: [],
+        });
+      }
+    }
+  }, [visible, initialSet]);
 
   const handleSave = () => {
     if (!set.name.trim()) {
