@@ -25,6 +25,7 @@
     "startNewGame": "Neues Spiel starten",
     "continueGame": "Spiel fortsetzen",
     "manageSet": "Sets verwalten",
+    "howToPlay": "Wie spielt man?",
     "selectLanguage": "Sprache auswählen",
     "noActiveGame": "Kein aktives Spiel"
   },
@@ -157,5 +158,118 @@
     "maxLength": "Darf höchstens {{max}} Zeichen lang sein",
     "invalidFormat": "Ungültiges Format",
     "mustBeNumber": "Muss eine Zahl sein"
+  },
+  "tutorial": {
+    "title": "Spiel-Tutorial",
+    "backToHome": "Zurück zur Startseite",
+    "startPlaying": "Spielen beginnen!",
+    "note": "Hinweis",
+    "important": "Wichtig",
+    "steps": {
+      "introduction": {
+        "title": "Willkommen bei Quiz Arena",
+        "description": "Quiz Arena ist ein unterhaltsames und wettbewerbsorientiertes Quizspiel, bei dem Sie eine tolle Zeit mit Freunden oder Familie verbringen können. Testen Sie Ihr Wissen mit Fragen aus verschiedenen Kategorien, strategischem Joker-Einsatz und einer spannenden Finalrunde!",
+        "objective": {
+          "title": "Spielziel",
+          "description": "Beantworten Sie Fragen richtig, um Punkte zu sammeln und gewinnen Sie das Spiel, indem Sie die höchste Punktzahl erreichen. Denken Sie strategisch, setzen Sie Ihre Joker klug ein und lassen Sie Ihre Gegner in der Finalrunde hinter sich!"
+        }
+      },
+      "setup": {
+        "title": "Spielvorbereitung",
+        "description": "Was Sie vor Spielbeginn tun müssen:",
+        "steps": {
+          "title": "Schritt-für-Schritt-Einrichtung",
+          "step1": "Klicken Sie auf der Startseite auf die Schaltfläche 'Neues Spiel starten'",
+          "step2": "Wählen Sie das Fragenset aus, das Sie spielen möchten (oder erstellen Sie Ihr eigenes Set)",
+          "step3": "Entscheiden Sie, ob Sie die Finalrunde aktivieren möchten",
+          "step4": "Fügen Sie die Namen der am Spiel teilnehmenden Teams hinzu (mindestens 2 Teams erforderlich)"
+        },
+        "note": "Sie können Fragensets bearbeiten, neue Sets erstellen oder vorhandene Sets im Bereich 'Sets verwalten' importieren/exportieren."
+      },
+      "gameBoard": {
+        "title": "Spielbrett",
+        "description": "Das Spielbrett besteht aus Fragen in verschiedenen Kategorien und Punktwerten. Jede Kategorie enthält in der Regel Fragen auf 5 verschiedenen Schwierigkeitsstufen.",
+        "categories": {
+          "title": "Kategorien und Punkte",
+          "description": "Jede Kategorie enthält Fragen mit unterschiedlichen Punktwerten. Fragen mit höheren Punkten sind in der Regel schwieriger:"
+        },
+        "howToPlay": {
+          "title": "Wie spielt man?",
+          "step1": "Das Team, das an der Reihe ist, wählt eine Kategorie und einen Punktwert aus",
+          "step2": "Die ausgewählte Frage wird auf dem Bildschirm angezeigt",
+          "step3": "Das Team kann die Frage beantworten oder einen Joker einsetzen",
+          "step4": "Bei richtiger Antwort erhält es Punkte; bei falscher Antwort geht die Reihe an das nächste Team"
+        }
+      },
+      "questions": {
+        "title": "Fragen beantworten",
+        "description": "Jede Frage muss innerhalb einer bestimmten Zeit beantwortet werden. Wählen und bestätigen Sie Ihre Antwort, bevor die Zeit abläuft.",
+        "answerProcess": {
+          "title": "Antwortprozess",
+          "step1": "Die Frage und Optionen werden auf dem Bildschirm angezeigt",
+          "step2": "Der Timer startet (normalerweise 30-60 Sekunden)",
+          "step3": "Wählen Sie die Option aus, die Sie für richtig halten",
+          "step4": "Klicken Sie auf die Schaltfläche 'Antwort bestätigen'"
+        },
+        "correct": {
+          "title": "Richtige Antwort",
+          "description": "Wenn Sie richtig antworten, erhalten Sie Punkte entsprechend dem Wert der Frage und behalten Ihren Zug. Sie können mit aufeinanderfolgenden richtigen Antworten Schwung aufbauen!"
+        },
+        "wrong": {
+          "title": "Falsche Antwort",
+          "description": "Wenn Sie falsch antworten, verlieren Sie keine Punkte, aber der Zug geht an das nächste Team. Die richtige Antwort und Erklärung werden angezeigt."
+        }
+      },
+      "jokers": {
+        "title": "Joker",
+        "description": "Jedes Team hat 3 verschiedene Joker, die es einsetzen kann. Der strategische Einsatz von Jokern spielt eine wichtige Rolle beim Gewinnen des Spiels!",
+        "fiftyFifty": {
+          "title": "50/50",
+          "description": "Eliminiert 2 falsche Optionen aus 4 Auswahlmöglichkeiten. Dadurch erhöht sich Ihre Chance, richtig zu antworten, von 25% auf 50%. Es ist klüger, ihn bei schwierigen Fragen einzusetzen, nicht bei einfachen."
+        },
+        "transfer": {
+          "title": "Übertragen",
+          "description": "Überträgt die Frage an ein anderes Team. Wenn dieses Team falsch antwortet, kehrt der Zug zu Ihnen zurück und Sie können antworten. Nutzen Sie es, um Ihre Gegner in Schwierigkeiten zu bringen!"
+        },
+        "shield": {
+          "title": "Schild",
+          "description": "Schützt eine Option. Diese Option wird nicht eliminiert, selbst wenn der 50/50-Joker verwendet wird. Sie können sie schützen, wenn Sie die richtige Antwort kennen."
+        },
+        "limitation": "Jedes Team kann während 3 aufeinanderfolgender Fragenzüge maximal 1 Joker einsetzen. Joker klug und rechtzeitig einzusetzen ist von entscheidender Bedeutung!"
+      },
+      "finalRound": {
+        "title": "Finalrunde",
+        "description": "Nachdem alle Fragen abgeschlossen sind, beginnt, falls aktiviert, die Finalrunde. Diese Runde kann das Schicksal des Spiels bestimmen!",
+        "howItWorks": {
+          "title": "Wie funktioniert es?",
+          "step1": "Fragen erfordern normalerweise numerische Schätzungen",
+          "step2": "Alle Teams beantworten die gleiche Frage",
+          "step3": "Antworten werden geheim eingegeben und gleichzeitig enthüllt",
+          "step4": "Teams, die der richtigen Antwort am nächsten kommen, erhalten Punkte"
+        },
+        "scoring": {
+          "title": "Punktesystem",
+          "description": "In der Finalrunde erhalten Sie Punkte basierend auf Ihrer Nähe zur richtigen Antwort:",
+          "first": "Nächste Schätzung: 500 Punkte",
+          "second": "Zweitnächste: 300 Punkte",
+          "third": "Drittnächste: 200 Punkte",
+          "fourth": "Viertnächste: 100 Punkte"
+        }
+      },
+      "winning": {
+        "title": "Gewinnstrategien",
+        "description": "Einige Tipps für den Erfolg in Quiz Arena:",
+        "tips": {
+          "title": "Tipps zum Gewinnen",
+          "tip1": "Bewahren Sie Joker nicht für den letzten Moment auf - setzen Sie sie strategisch bei schwierigen Fragen ein",
+          "tip2": "Versuchen Sie, Fragen mit hohen Punkten zu wählen, aber gehen Sie keine unnötigen Risiken ein",
+          "tip3": "Berücksichtigen Sie die Punktesituation vor der Finalrunde",
+          "tip4": "Setzen Sie den Transfer-Joker bei Kategorien ein, in denen Ihre Gegner schwach sind",
+          "tip5": "Kommunizieren Sie als Team und treffen Sie gemeinsam Entscheidungen"
+        },
+        "ready": "Sind Sie bereit?",
+        "goodLuck": "Viel Glück in Quiz Arena! Ein unterhaltsames und wettbewerbsorientiertes Spiel erwartet Sie. Seien Sie das Gewinnerteam!"
+      }
+    }
   }
 }

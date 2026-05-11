@@ -6,12 +6,14 @@ import GameBoardPage from './pages/GameBoardPage/GameBoardPage';
 import FinalRoundPage from './pages/FinalRoundPage/FinalRoundPage';
 import ResultPage from './pages/ResultPage/ResultPage';
 import SetManagementPage from './pages/SetManagementPage/SetManagementPage';
+import GameTutorialPage from './pages/GameTutorialPage/GameTutorialPage';
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/tutorial" element={<GameTutorialPage />} />
         <Route path="/team-setup" element={<TeamSetupPage />} />
         <Route path="/game" element={<GameBoardPage />} />
         <Route path="/final-round" element={<FinalRoundPage />} />

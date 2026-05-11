@@ -25,6 +25,7 @@
     "startNewGame": "Start New Game",
     "continueGame": "Continue Game",
     "manageSet": "Manage Sets",
+    "howToPlay": "How to Play?",
     "selectLanguage": "Select Language",
     "noActiveGame": "No active game"
   },
@@ -157,5 +158,118 @@
     "maxLength": "Must be at most {{max}} characters",
     "invalidFormat": "Invalid format",
     "mustBeNumber": "Must be a number"
+  },
+  "tutorial": {
+    "title": "Game Tutorial",
+    "backToHome": "Back to Home",
+    "startPlaying": "Start Playing!",
+    "note": "Note",
+    "important": "Important",
+    "steps": {
+      "introduction": {
+        "title": "Welcome to Quiz Arena",
+        "description": "Quiz Arena is a fun and competitive trivia game where you can have a great time with friends or family. Test your knowledge with questions from different categories, strategic joker usage, and an exciting final round!",
+        "objective": {
+          "title": "Game Objective",
+          "description": "Answer questions correctly to earn points and win the game by achieving the highest score. Think strategically, use your jokers wisely, and leave your opponents behind in the final round!"
+        }
+      },
+      "setup": {
+        "title": "Game Setup",
+        "description": "What you need to do before starting the game:",
+        "steps": {
+          "title": "Step by Step Setup",
+          "step1": "Click the 'Start New Game' button on the home page",
+          "step2": "Select the question set you want to play (or create your own set)",
+          "step3": "Decide whether you want to enable the Final Round",
+          "step4": "Add the names of teams participating in the game (at least 2 teams required)"
+        },
+        "note": "You can edit question sets, create new sets, or import/export existing sets from the 'Manage Sets' section."
+      },
+      "gameBoard": {
+        "title": "Game Board",
+        "description": "The game board consists of questions in different categories and point values. Each category typically contains questions at 5 different difficulty levels.",
+        "categories": {
+          "title": "Categories and Points",
+          "description": "Each category contains questions at different point values. Higher-point questions are generally more difficult:"
+        },
+        "howToPlay": {
+          "title": "How to Play?",
+          "step1": "The team whose turn it is selects a category and point value",
+          "step2": "The selected question is displayed on the screen",
+          "step3": "The team can answer the question or use a joker",
+          "step4": "If they answer correctly, they earn points; if incorrect, the turn passes to the next team"
+        }
+      },
+      "questions": {
+        "title": "Answering Questions",
+        "description": "Each question must be answered within a specific time. Select and confirm your answer before time runs out.",
+        "answerProcess": {
+          "title": "Answering Process",
+          "step1": "The question and options are displayed on the screen",
+          "step2": "The timer starts (typically 30-60 seconds)",
+          "step3": "Select the option you think is correct",
+          "step4": "Click the 'Confirm Answer' button"
+        },
+        "correct": {
+          "title": "Correct Answer",
+          "description": "When you answer correctly, you earn points equal to the question's value and keep your turn. You can build momentum with consecutive correct answers!"
+        },
+        "wrong": {
+          "title": "Wrong Answer",
+          "description": "When you answer incorrectly, you don't lose points, but the turn passes to the next team. The correct answer and explanation are shown."
+        }
+      },
+      "jokers": {
+        "title": "Jokers",
+        "description": "Each team has 3 different jokers they can use. Using jokers strategically plays a major role in winning the game!",
+        "fiftyFifty": {
+          "title": "50/50",
+          "description": "Eliminates 2 wrong options from 4 choices. This increases your chance of answering correctly from 25% to 50%. It's smarter to use on difficult questions, not easy ones."
+        },
+        "transfer": {
+          "title": "Transfer",
+          "description": "Transfers the question to another team. If that team answers incorrectly, the turn returns to you and you can answer. Use it to put your opponents in a tough spot!"
+        },
+        "shield": {
+          "title": "Shield",
+          "description": "Protects one option. That option won't be eliminated even if the 50/50 joker is used. You can protect it if you know the correct answer."
+        },
+        "limitation": "Each team can use a maximum of 1 joker during 3 consecutive question turns. Using jokers wisely and timely is critically important!"
+      },
+      "finalRound": {
+        "title": "Final Round",
+        "description": "After all questions are completed, if enabled, the Final Round begins. This round can determine the fate of the game!",
+        "howItWorks": {
+          "title": "How It Works?",
+          "step1": "Questions typically require numerical estimates",
+          "step2": "All teams answer the same question",
+          "step3": "Answers are entered secretly and revealed simultaneously",
+          "step4": "Teams closest to the correct answer earn points"
+        },
+        "scoring": {
+          "title": "Scoring System",
+          "description": "In the Final Round, you earn points based on your proximity to the correct answer:",
+          "first": "Closest estimate: 500 points",
+          "second": "Second closest: 300 points",
+          "third": "Third closest: 200 points",
+          "fourth": "Fourth closest: 100 points"
+        }
+      },
+      "winning": {
+        "title": "Winning Strategies",
+        "description": "Some tips for succeeding in Quiz Arena:",
+        "tips": {
+          "title": "Tips for Winning",
+          "tip1": "Don't save jokers for the last moment - use them strategically on difficult questions",
+          "tip2": "Try to go for high-point questions but don't take unnecessary risks",
+          "tip3": "Consider the score situation before the Final Round",
+          "tip4": "Use the transfer joker on categories where your opponents are weak",
+          "tip5": "Communicate as a team and make decisions together"
+        },
+        "ready": "Are you ready?",
+        "goodLuck": "Good luck in Quiz Arena! A fun and competitive game awaits you. Be the winning team!"
+      }
+    }
   }
 }

@@ -6,11 +6,12 @@ import {
   SettingOutlined,
   GlobalOutlined,
   TrophyOutlined,
+  QuestionCircleOutlined,
 } from '@ant-design/icons';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useAppDispatch, useAppSelector } from '../../hooks/useAppStore';
-import { setActiveSet, setPhase } from '../../store/gameSlice';
+import { setActiveSet } from '../../store/gameSlice';
 import { setLanguage } from '../../store/settingsSlice';
 import { GamePhase } from '../../types';
 import { SUPPORTED_LANGUAGES } from '../../constants';
@@ -60,6 +61,10 @@ const HomePage: React.FC = () => {
 
   const handleManageSets = () => {
     navigate('/sets');
+  };
+
+  const handleTutorial = () => {
+    navigate('/tutorial');
   };
 
   const handleLanguageChange = (lang: string) => {
@@ -152,6 +157,23 @@ const HomePage: React.FC = () => {
                 className="h-14 text-lg"
               >
                 {t('home.manageSet')}
+              </Button>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.55 }}
+            >
+              <Button
+                size="large"
+                icon={<QuestionCircleOutlined />}
+                onClick={handleTutorial}
+                block
+                className="h-14 text-lg"
+                type="default"
+              >
+                {t('home.howToPlay')}
               </Button>
             </motion.div>
 

@@ -25,6 +25,7 @@
     "startNewGame": "Yeni Yarışma Başlat",
     "continueGame": "Yarışmaya Devam Et",
     "manageSet": "Setleri Yönet",
+    "howToPlay": "Nasıl Oynanır?",
     "selectLanguage": "Dil Seçin",
     "noActiveGame": "Devam eden yarışma bulunmuyor"
   },
@@ -157,5 +158,118 @@
     "maxLength": "En fazla {{max}} karakter olmalıdır",
     "invalidFormat": "Geçersiz format",
     "mustBeNumber": "Sayı olmalıdır"
+  },
+  "tutorial": {
+    "title": "Oyun Rehberi",
+    "backToHome": "Ana Sayfaya Dön",
+    "startPlaying": "Oynamaya Başla!",
+    "note": "Not",
+    "important": "Önemli",
+    "steps": {
+      "introduction": {
+        "title": "Quiz Arena'ya Hoş Geldiniz",
+        "description": "Quiz Arena, arkadaşlarınız veya ailenizle keyifli zaman geçirebileceğiniz eğlenceli ve rekabetçi bir bilgi yarışması oyunudur. Farklı kategorilerden sorular, stratejik joker kullanımı ve heyecan dolu final turu ile bilginizi test edin!",
+        "objective": {
+          "title": "Oyunun Amacı",
+          "description": "Sorulara doğru cevap vererek puan toplayın ve en yüksek skora ulaşarak yarışmayı kazanın. Stratejik düşünün, jokerlerinizi akıllıca kullanın ve final turunda rakiplerinizi geride bırakın!"
+        }
+      },
+      "setup": {
+        "title": "Oyunu Hazırlama",
+        "description": "Oyuna başlamadan önce yapmanız gerekenler:",
+        "steps": {
+          "title": "Adım Adım Kurulum",
+          "step1": "Ana sayfadan 'Yeni Yarışma Başlat' butonuna tıklayın",
+          "step2": "Oynamak istediğiniz soru setini seçin (veya kendi setinizi oluşturun)",
+          "step3": "Final Round'u aktif etmek isteyip istemediğinize karar verin",
+          "step4": "Yarışmaya katılacak takım isimlerini ekleyin (en az 2 takım gereklidir)"
+        },
+        "note": "Soru setlerini 'Setleri Yönet' bölümünden düzenleyebilir, yeni setler oluşturabilir veya mevcut setleri içe/dışa aktarabilirsiniz."
+      },
+      "gameBoard": {
+        "title": "Oyun Tahtası",
+        "description": "Oyun tahtası, farklı kategoriler ve puan değerlerinde sorulardan oluşur. Her kategori genellikle 5 farklı zorluk seviyesinde sorular içerir.",
+        "categories": {
+          "title": "Kategori ve Puanlar",
+          "description": "Her kategori farklı puan değerlerinde sorular içerir. Yüksek puanlı sorular genellikle daha zordur:"
+        },
+        "howToPlay": {
+          "title": "Nasıl Oynanır?",
+          "step1": "Sıra gelen takım, bir kategori ve puan değeri seçer",
+          "step2": "Seçilen soru ekranda görüntülenir",
+          "step3": "Takım soruyu cevaplayabilir veya joker kullanabilir",
+          "step4": "Doğru cevap verirse puan kazanır, yanlış cevap verirse bir sonraki takıma sıra geçer"
+        }
+      },
+      "questions": {
+        "title": "Soruları Cevaplama",
+        "description": "Her soru, belirli bir süre içinde cevaplanmalıdır. Süre dolmadan cevabınızı seçin ve onaylayın.",
+        "answerProcess": {
+          "title": "Cevaplama Süreci",
+          "step1": "Soru ve şıklar ekranda görüntülenir",
+          "step2": "Süre sayacı başlar (genellikle 30-60 saniye)",
+          "step3": "Doğru olduğunu düşündüğünüz şıkkı seçin",
+          "step4": "'Cevabı Onayla' butonuna tıklayın"
+        },
+        "correct": {
+          "title": "Doğru Cevap",
+          "description": "Doğru cevap verdiğinizde, sorunun puan değeri kadar puan kazanırsınız ve sıra sizde kalır. Ardışık doğru cevaplarla momentum kazanabilirsiniz!"
+        },
+        "wrong": {
+          "title": "Yanlış Cevap",
+          "description": "Yanlış cevap verdiğinizde puan kaybetmezsiniz, ancak sıra bir sonraki takıma geçer. Sorunun doğru cevabı ve açıklaması gösterilir."
+        }
+      },
+      "jokers": {
+        "title": "Jokerler",
+        "description": "Her takımın kullanabileceği 3 farklı joker vardır. Jokerleri stratejik olarak kullanmak oyunu kazanmanızda büyük rol oynar!",
+        "fiftyFifty": {
+          "title": "Yarı Yarıya (50/50)",
+          "description": "4 şıktan 2 yanlış şıkkı eler. Böylece soruyu cevaplama şansınız %50'den %50'ye çıkar. Kolay sorularda değil, zor sorularda kullanmak daha mantıklıdır."
+        },
+        "transfer": {
+          "title": "Transfer Et",
+          "description": "Soruyu başka bir takıma gönderir. Eğer o takım soruyu yanlış cevarsa, sıra size döner ve siz cevaplayabilirsiniz. Rakiplerinizi zor duruma sokmak için kullanın!"
+        },
+        "shield": {
+          "title": "Şık Koruma",
+          "description": "Bir şıkkı koruma altına alır. O şık, Yarı Yarıya jokeri kullanılsa bile elenmez. Doğru cevabı biliyorsanız onu koruyabilirsiniz."
+        },
+        "limitation": "Her takım ardışık 3 soru sırasında maksimum 1 joker kullanabilir. Jokerleri akıllıca ve zamanında kullanmak kritik öneme sahiptir!"
+      },
+      "finalRound": {
+        "title": "Final Round",
+        "description": "Tüm sorular tamamlandıktan sonra, eğer aktifse Final Round başlar. Bu tur, oyunun kaderini belirleyebilir!",
+        "howItWorks": {
+          "title": "Nasıl Çalışır?",
+          "step1": "Genellikle sayısal tahmin gerektiren sorular sorulur",
+          "step2": "Tüm takımlar aynı soruya cevap verir",
+          "step3": "Cevaplar gizli olarak girilir ve aynı anda açıklanır",
+          "step4": "Doğru cevaba en yakın olan takımlar puan kazanır"
+        },
+        "scoring": {
+          "title": "Puanlama Sistemi",
+          "description": "Final Round'da doğru cevaba yakınlığınıza göre puan kazanırsınız:",
+          "first": "En yakın tahmin: 500 puan",
+          "second": "İkinci en yakın: 300 puan",
+          "third": "Üçüncü en yakın: 200 puan",
+          "fourth": "Dördüncü en yakın: 100 puan"
+        }
+      },
+      "winning": {
+        "title": "Kazanma Stratejileri",
+        "description": "Quiz Arena'da başarılı olmak için bazı ipuçları:",
+        "tips": {
+          "title": "Kazanmak İçin İpuçları",
+          "tip1": "Jokerleri son ana saklamayın - zor sorularda stratejik olarak kullanın",
+          "tip2": "Yüksek puanlı soruları almaya çalışın ama riskli olmasın",
+          "tip3": "Final Round öncesi puan durumunu göz önünde bulundurun",
+          "tip4": "Transfer jokerini, rakiplerinizin zayıf olduğu kategorilerde kullanın",
+          "tip5": "Takım olarak iletişim kurun ve birlikte karar verin"
+        },
+        "ready": "Hazır mısınız?",
+        "goodLuck": "Quiz Arena'da bol şans! Eğlenceli ve rekabetçi bir oyun sizi bekliyor. Kazanan takım olun!"
+      }
+    }
   }
 }
