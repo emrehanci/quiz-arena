@@ -14,7 +14,12 @@ export class SetService {
   static exportSet(set: QuizSet): void {
     const json = JSON.stringify(set, null, 2);
     const blob = new Blob([json], { type: 'application/json' });
-    const fileName = `${set.id || 'quiz-set'}.json`;
+    // Use set name instead of id, sanitize for filename
+    const safeName = (set.name || 'quiz-set')
+      .replace(/[<>:"/\\|?*]/g, '') // Remove invalid filename characters
+      .replace(/\s+/g, '-') // Replace spaces with hyphens
+      .trim();
+    const fileName = `${safeName}.json`;
     saveAs(blob, fileName);
   }
 
