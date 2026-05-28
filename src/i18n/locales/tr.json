@@ -102,7 +102,9 @@
     "finalScores": "Final Skorları",
     "team": "Grup",
     "score": "Skor",
-    "newGame": "Yeni Yarışma"
+    "newGame": "Yeni Yarışma",
+    "scoreHistory": "Skor Geçmişi",
+    "noGameHistory": "Oyun geçmişi mevcut değil"
   },
   "admin": {
     "title": "Yönetici Paneli",

@@ -6,6 +6,7 @@ import type {
   AnsweredQuestion,
   FinalRoundAnswer,
   Question,
+  GameLogEntry,
 } from '../types';
 import { GamePhase } from '../types';
 import { QUESTION_DURATION } from '../constants';
@@ -24,6 +25,7 @@ const initialState: GameState = {
     isActive: false,
   },
   isFinalRoundEnabled: false,
+  gameLog: [],
 };
 
 const gameSlice = createSlice({
@@ -258,6 +260,12 @@ const gameSlice = createSlice({
         isActive: false,
       };
       state.isFinalRoundEnabled = false;
+      state.gameLog = [];
+    },
+
+    // Game logging
+    addGameLogEntry: (state, action: PayloadAction<GameLogEntry>) => {
+      state.gameLog.push(action.payload);
     },
   },
 });
@@ -297,6 +305,7 @@ export const {
   endFinalRound,
   resetGame,
   startNewGame,
+  addGameLogEntry,
 } = gameSlice.actions;
 
 export default gameSlice.reducer;

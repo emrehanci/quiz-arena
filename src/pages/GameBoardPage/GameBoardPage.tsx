@@ -27,6 +27,7 @@ import {
   updateTeamScore,
   startFinalRound,
   setPhase,
+  addGameLogEntry,
 } from '../../store/gameSlice';
 import { GameLogicService } from '../../services/gameLogic';
 import { MAX_WRONG_ATTEMPTS } from '../../constants';
@@ -190,6 +191,33 @@ const GameBoardPage: React.FC = () => {
     // Play success sound
     soundService.playSuccess();
 
+    // Log the correct answer
+    const teamScoresSnapshot: Record<string, number> = {};
+    teams.forEach(team => {
+      if (team.id === updatedTeam.id) {
+        teamScoresSnapshot[team.id] = updatedTeam.score;
+      } else if (activeQuestion.isTransferred && team.id === activeQuestion.transferredFromTeamId) {
+        // Find the updated score for the transferrer
+        const transferrerUpdated = teams.find(t => t.id === activeQuestion.transferredFromTeamId);
+        teamScoresSnapshot[team.id] = transferrerUpdated ? transferrerUpdated.score : team.score;
+      } else {
+        teamScoresSnapshot[team.id] = team.score;
+      }
+    });
+
+    dispatch(addGameLogEntry({
+      timestamp: Date.now(),
+      teamId: updatedTeam.id,
+      teamName: updatedTeam.name,
+      questionText: activeQuestion.question.questionText,
+      categoryId: activeQuestion.question.categoryId,
+      point: activeQuestion.question.point,
+      isCorrect: true,
+      pointsEarned: points,
+      teamScoresSnapshot,
+      wasTransferred: activeQuestion.isTransferred,
+    }));
+
     // Check if team can continue with updated consecutive count
     // Skip this check for transferred questions (turn already returned to transferrer)
     if (!activeQuestion.isTransferred && !GameLogicService.canTeamContinue(updatedTeam)) {
@@ -255,6 +283,29 @@ const GameBoardPage: React.FC = () => {
       // Play fail sound
       soundService.playFail();
       
+      // Log the wrong answer (transferred)
+      const answererTeam = teams.find(t => t.id === activeQuestion.transferredToTeamId);
+      const transferrerTeam = teams.find(t => t.id === activeQuestion.transferredFromTeamId);
+      if (answererTeam && transferrerTeam) {
+        const teamScoresSnapshot: Record<string, number> = {};
+        updatedTeams.forEach(team => {
+          teamScoresSnapshot[team.id] = team.score;
+        });
+
+        dispatch(addGameLogEntry({
+          timestamp: Date.now(),
+          teamId: answererTeam.id,
+          teamName: answererTeam.name,
+          questionText: activeQuestion.question.questionText,
+          categoryId: activeQuestion.question.categoryId,
+          point: activeQuestion.question.point,
+          isCorrect: false,
+          pointsEarned: -points,
+          teamScoresSnapshot,
+          wasTransferred: true,
+        }));
+      }
+      
       // Transfer failed, return to the team that transferred (transferredFromTeamId)
       const transferrerTeamIndex = teams.findIndex(t => t.id === activeQuestion.transferredFromTeamId);
       if (transferrerTeamIndex !== -1) {
@@ -303,6 +354,25 @@ const GameBoardPage: React.FC = () => {
       // Play fail sound
       soundService.playFail();
       
+      // Log the wrong answer (question lost)
+      const teamScoresSnapshot: Record<string, number> = {};
+      teams.forEach(team => {
+        teamScoresSnapshot[team.id] = team.score;
+      });
+
+      dispatch(addGameLogEntry({
+        timestamp: Date.now(),
+        teamId: freshCurrentTeam.id,
+        teamName: freshCurrentTeam.name,
+        questionText: activeQuestion.question.questionText,
+        categoryId: activeQuestion.question.categoryId,
+        point: activeQuestion.question.point,
+        isCorrect: false,
+        pointsEarned: 0, // No points lost on regular wrong answer
+        teamScoresSnapshot,
+        wasTransferred: false,
+      }));
+      
       // Shield: team continues (turn stays)
       // Fifty-Fifty or 2nd wrong: move to next team
       if (!shieldWasUsed) {
@@ -321,6 +391,25 @@ const GameBoardPage: React.FC = () => {
       
       // Play fail sound
       soundService.playFail();
+      
+      // Log the wrong answer (first attempt)
+      const teamScoresSnapshot: Record<string, number> = {};
+      teams.forEach(team => {
+        teamScoresSnapshot[team.id] = team.score;
+      });
+
+      dispatch(addGameLogEntry({
+        timestamp: Date.now(),
+        teamId: freshCurrentTeam.id,
+        teamName: freshCurrentTeam.name,
+        questionText: activeQuestion.question.questionText,
+        categoryId: activeQuestion.question.categoryId,
+        point: activeQuestion.question.point,
+        isCorrect: false,
+        pointsEarned: 0, // No points lost on first wrong answer
+        teamScoresSnapshot,
+        wasTransferred: false,
+      }));
       
       // Calculate next team index and reset their consecutive count
       // When a team receives a question from another team, their streak is reset

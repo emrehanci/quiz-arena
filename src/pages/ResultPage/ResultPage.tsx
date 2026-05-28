@@ -9,6 +9,7 @@ import { useAppDispatch, useAppSelector } from '../../hooks/useAppStore';
 import { startNewGame } from '../../store/gameSlice';
 import { GameLogicService } from '../../services/gameLogic';
 import { soundService } from '../../utils/soundService';
+import ScoreHistoryChart from '../../components/ScoreHistoryChart/ScoreHistoryChart';
 
 const { Title, Text } = Typography;
 
@@ -18,6 +19,7 @@ const ResultPage: React.FC = () => {
   const dispatch = useAppDispatch();
 
   const teams = useAppSelector(state => state.game.teams);
+  const gameLog = useAppSelector(state => state.game.gameLog);
   const [showConfetti, setShowConfetti] = useState(true);
   const [windowSize, setWindowSize] = useState({
     width: window.innerWidth,
@@ -169,6 +171,18 @@ const ResultPage: React.FC = () => {
                 }
               />
             </motion.div>
+
+            {/* Score History Chart */}
+            {gameLog.length > 0 && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.7 }}
+                className="mt-8"
+              >
+                <ScoreHistoryChart gameLog={gameLog} teams={teams} />
+              </motion.div>
+            )}
 
             {/* Action Buttons */}
             <motion.div

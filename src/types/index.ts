@@ -110,6 +110,20 @@ export interface AnsweredQuestion {
   questionId: string;
 }
 
+// Game log entry for tracking all answers and score changes
+export interface GameLogEntry {
+  timestamp: number;
+  teamId: string;
+  teamName: string;
+  questionText: string;
+  categoryId: string;
+  point: number;
+  isCorrect: boolean;
+  pointsEarned: number; // Can be positive or negative
+  teamScoresSnapshot: Record<string, number>; // All team scores at this moment
+  wasTransferred?: boolean;
+}
+
 // Main game state
 export interface GameState {
   phase: GamePhase;
@@ -121,6 +135,7 @@ export interface GameState {
   lostQuestions: AnsweredQuestion[];
   finalRound: FinalRoundState;
   isFinalRoundEnabled: boolean;
+  gameLog: GameLogEntry[]; // Complete game history
 }
 
 // Settings state

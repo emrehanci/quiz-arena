@@ -102,7 +102,9 @@
     "finalScores": "Endpunktzahlen",
     "team": "Team",
     "score": "Punktzahl",
-    "newGame": "Neues Spiel"
+    "newGame": "Neues Spiel",
+    "scoreHistory": "Punkteverlauf",
+    "noGameHistory": "Keine Spielhistorie verfügbar"
   },
   "admin": {
     "title": "Admin-Panel",
