@@ -48,6 +48,17 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
 }) => {
   const { t } = useTranslation();
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
+  const [showSuccessAnimation, setShowSuccessAnimation] = useState(false);
+  const [showFailAnimation, setShowFailAnimation] = useState(false);
+
+  // Reset selection when modal closes or new question opens
+  useEffect(() => {
+    if (!visible) {
+      setSelectedOption(null);
+      setShowSuccessAnimation(false);
+      setShowFailAnimation(false);
+    }
+  }, [visible]);
 
   // Play open sound when question becomes visible
   useEffect(() => {
@@ -56,10 +67,44 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
     }
   }, [visible, showExplanation]);
 
+  // Trigger success animation when correct answer is revealed
+  useEffect(() => {
+    if (showExplanation && correctOptionId && selectedOption === correctOptionId) {
+      setShowSuccessAnimation(true);
+      const timer = setTimeout(() => {
+        setShowSuccessAnimation(false);
+      }, 2000);
+      return () => clearTimeout(timer);
+    }
+  }, [showExplanation, correctOptionId, selectedOption]);
+
+  // Trigger fail animation when wrong answer is revealed
+  useEffect(() => {
+    if (showExplanation && correctOptionId && selectedOption && selectedOption !== correctOptionId) {
+      setShowFailAnimation(true);
+      const timer = setTimeout(() => {
+        setShowFailAnimation(false);
+      }, 2000);
+      return () => clearTimeout(timer);
+    }
+  }, [showExplanation, correctOptionId, selectedOption]);
+
   const handleConfirm = () => {
     if (selectedOption && selectedOption !== shieldedOptionId) {
+      // Trigger animations immediately based on answer
+      if (selectedOption === question.correctOptionId) {
+        setShowSuccessAnimation(true);
+        setTimeout(() => {
+          setShowSuccessAnimation(false);
+        }, 2000);
+      } else {
+        setShowFailAnimation(true);
+        setTimeout(() => {
+          setShowFailAnimation(false);
+        }, 2000);
+      }
       onAnswer(selectedOption);
-      setSelectedOption(null);
+      // Don't clear selectedOption so animation can trigger
     }
   };
 
@@ -102,6 +147,60 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
       maskClosable={false}
     >
       <div className="p-6">
+        {/* Success Animation Overlay */}
+        <AnimatePresence>
+          {showSuccessAnimation && (
+            <motion.div
+              initial={{ opacity: 0, scale: 0 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0 }}
+              className="absolute inset-0 flex items-center justify-center z-50 pointer-events-none"
+            >
+              <motion.div
+                initial={{ rotate: 0 }}
+                animate={{ rotate: 360 }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+                className="bg-green-500 rounded-full p-8 shadow-2xl"
+              >
+                <CheckCircleOutlined className="text-white text-9xl" />
+              </motion.div>
+              <motion.div
+                initial={{ scale: 0 }}
+                animate={{ scale: [0, 1.2, 0] }}
+                transition={{ duration: 1.5, times: [0, 0.5, 1] }}
+                className="absolute inset-0 rounded-full bg-green-400 opacity-30"
+              />
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+        {/* Fail Animation Overlay */}
+        <AnimatePresence>
+          {showFailAnimation && (
+            <motion.div
+              initial={{ opacity: 0, scale: 0 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0 }}
+              className="absolute inset-0 flex items-center justify-center z-50 pointer-events-none"
+            >
+              <motion.div
+                initial={{ rotate: 0 }}
+                animate={{ rotate: [0, -10, 10, -10, 10, 0] }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+                className="bg-red-500 rounded-full p-8 shadow-2xl"
+              >
+                <CloseCircleOutlined className="text-white text-9xl" />
+              </motion.div>
+              <motion.div
+                initial={{ scale: 0 }}
+                animate={{ scale: [0, 1.2, 0] }}
+                transition={{ duration: 1.5, times: [0, 0.5, 1] }}
+                className="absolute inset-0 rounded-full bg-red-400 opacity-30"
+              />
+            </motion.div>
+          )}
+        </AnimatePresence>
+
         {/* Admin Button - Fixed top right */}
         {onOpenAdminPanel && (
           <Button
