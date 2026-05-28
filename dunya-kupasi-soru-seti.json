@@ -1,0 +1,900 @@
+{
+  "id": "world-cup-001",
+  "name": "Dünya Kupası Bilgi Yarışması",
+  "description": "Dünya Kupası tarihinden ülkelere özel sorular",
+  "finalRoundEnabled": true,
+  "categories": [
+    {
+      "id": "turkiye",
+      "title": "Türkiye",
+      "questionsByPoint": {
+        "100": [
+          {
+            "id": "turkiye-100-1",
+            "categoryId": "turkiye",
+            "point": 100,
+            "questionText": "Türkiye Dünya Kupası finallerinde kaç kez yer almıştır?",
+            "options": [
+              { "id": "a", "text": "1" },
+              { "id": "b", "text": "2" },
+              { "id": "c", "text": "3" },
+              { "id": "d", "text": "4" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "Türkiye 1954 ve 2002 yıllarında olmak üzere 2 kez Dünya Kupası finallerinde yer almıştır."
+          }
+        ],
+        "200": [
+          {
+            "id": "turkiye-200-1",
+            "categoryId": "turkiye",
+            "point": 200,
+            "questionText": "Türkiye 2002 Dünya Kupası'nda kaçıncı olmuştur?",
+            "options": [
+              { "id": "a", "text": "1." },
+              { "id": "b", "text": "2." },
+              { "id": "c", "text": "3." },
+              { "id": "d", "text": "4." }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Türkiye 2002 Dünya Kupası'nda 3. olarak en iyi derecesini elde etmiştir."
+          }
+        ],
+        "300": [
+          {
+            "id": "turkiye-300-1",
+            "categoryId": "turkiye",
+            "point": 300,
+            "questionText": "2002 Dünya Kupası'nda Türkiye Milli Takımı'nın teknik direktörü kimdi?",
+            "options": [
+              { "id": "a", "text": "Fatih Terim" },
+              { "id": "b", "text": "Şenol Güneş" },
+              { "id": "c", "text": "Mustafa Denizli" },
+              { "id": "d", "text": "Ersun Yanal" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "2002 Dünya Kupası'nda Türkiye'yi Şenol Güneş çalıştırmıştır."
+          }
+        ],
+        "400": [
+          {
+            "id": "turkiye-400-1",
+            "categoryId": "turkiye",
+            "point": 400,
+            "questionText": "2002 Dünya Kupası'nda Türkiye'nin 3.lük maçında rakibi hangi ülkeydi?",
+            "options": [
+              { "id": "a", "text": "Brezilya" },
+              { "id": "b", "text": "Almanya" },
+              { "id": "c", "text": "Güney Kore" },
+              { "id": "d", "text": "İspanya" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Türkiye 3.lük maçında ev sahibi Güney Kore'yi 3-2 yenerek bronz madalya kazanmıştır."
+          }
+        ],
+        "500": [
+          {
+            "id": "turkiye-500-1",
+            "categoryId": "turkiye",
+            "point": 500,
+            "questionText": "Türkiye'nin 1954 Dünya Kupası'ndaki ilk maçında rakibi ve sonucu nedir?",
+            "options": [
+              { "id": "a", "text": "Batı Almanya 4-1" },
+              { "id": "b", "text": "Macaristan 7-0" },
+              { "id": "c", "text": "Güney Kore 7-0" },
+              { "id": "d", "text": "İsviçre 2-1" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Türkiye ilk Dünya Kupası maçında Güney Kore'yi 7-0 yenmiştir."
+          }
+        ]
+      }
+    },
+    {
+      "id": "brezilya",
+      "title": "Brezilya",
+      "questionsByPoint": {
+        "100": [
+          {
+            "id": "brezilya-100-1",
+            "categoryId": "brezilya",
+            "point": 100,
+            "questionText": "Brezilya kaç kez Dünya Kupası şampiyonu olmuştur?",
+            "options": [
+              { "id": "a", "text": "3" },
+              { "id": "b", "text": "4" },
+              { "id": "c", "text": "5" },
+              { "id": "d", "text": "6" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Brezilya 5 kez (1958, 1962, 1970, 1994, 2002) Dünya Kupası şampiyonu olmuştur."
+          }
+        ],
+        "200": [
+          {
+            "id": "brezilya-200-1",
+            "categoryId": "brezilya",
+            "point": 200,
+            "questionText": "Brezilya'nın 2002 Dünya Kupası finalindeki rakibi kimdi?",
+            "options": [
+              { "id": "a", "text": "Fransa" },
+              { "id": "b", "text": "İtalya" },
+              { "id": "c", "text": "Almanya" },
+              { "id": "d", "text": "Arjantin" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Brezilya 2002 finalinde Almanya'yı 2-0 yenerek şampiyon olmuştur."
+          }
+        ],
+        "300": [
+          {
+            "id": "brezilya-300-1",
+            "categoryId": "brezilya",
+            "point": 300,
+            "questionText": "Brezilya Dünya Kupası tarihinde kaç kez finalde yer almıştır?",
+            "options": [
+              { "id": "a", "text": "5" },
+              { "id": "b", "text": "6" },
+              { "id": "c", "text": "7" },
+              { "id": "d", "text": "8" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Brezilya 7 kez finalde yer almıştır (1950, 1958, 1962, 1970, 1994, 1998, 2002)."
+          }
+        ],
+        "400": [
+          {
+            "id": "brezilya-400-1",
+            "categoryId": "brezilya",
+            "point": 400,
+            "questionText": "Pele kaç Dünya Kupası finalinde şampiyon olmuştur?",
+            "options": [
+              { "id": "a", "text": "1" },
+              { "id": "b", "text": "2" },
+              { "id": "c", "text": "3" },
+              { "id": "d", "text": "4" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Pele 1958, 1962 ve 1970'te olmak üzere 3 kez Dünya Kupası şampiyonu olmuştur."
+          }
+        ],
+        "500": [
+          {
+            "id": "brezilya-500-1",
+            "categoryId": "brezilya",
+            "point": 500,
+            "questionText": "Brezilya'nın ev sahipliğinde oynadığı 1950 Dünya Kupası finalinde hangi ülke şampiyon olmuştur?",
+            "options": [
+              { "id": "a", "text": "Brezilya" },
+              { "id": "b", "text": "Uruguay" },
+              { "id": "c", "text": "Arjantin" },
+              { "id": "d", "text": "İsveç" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "1950 finalinde Uruguay, Maracana'da Brezilya'yı 2-1 yenerek şampiyon olmuştur. Bu maç 'Maracanazo' olarak bilinir."
+          }
+        ]
+      }
+    },
+    {
+      "id": "sirbistan",
+      "title": "Sırbistan",
+      "questionsByPoint": {
+        "100": [
+          {
+            "id": "sirbistan-100-1",
+            "categoryId": "sirbistan",
+            "point": 100,
+            "questionText": "Yugoslavya (Sırbistan dahil) kaç kez Dünya Kupası'nda yarı finale yükselmiştir?",
+            "options": [
+              { "id": "a", "text": "1" },
+              { "id": "b", "text": "2" },
+              { "id": "c", "text": "3" },
+              { "id": "d", "text": "4" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "Yugoslavya 1930 ve 1962'de olmak üzere 2 kez yarı finale yükselmiştir."
+          }
+        ],
+        "200": [
+          {
+            "id": "sirbistan-200-1",
+            "categoryId": "sirbistan",
+            "point": 200,
+            "questionText": "Sırbistan bağımsız ülke olarak ilk kez hangi yıl Dünya Kupası'nda yer almıştır?",
+            "options": [
+              { "id": "a", "text": "2006" },
+              { "id": "b", "text": "2010" },
+              { "id": "c", "text": "2014" },
+              { "id": "d", "text": "2018" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "Sırbistan bağımsız ülke olarak ilk kez 2010 Dünya Kupası'nda yer almıştır."
+          }
+        ],
+        "300": [
+          {
+            "id": "sirbistan-300-1",
+            "categoryId": "sirbistan",
+            "point": 300,
+            "questionText": "Yugoslavya'nın ilk Dünya Kupası'ndaki (1930) en iyi derecesi nedir?",
+            "options": [
+              { "id": "a", "text": "Şampiyon" },
+              { "id": "b", "text": "İkinci" },
+              { "id": "c", "text": "Üçüncü" },
+              { "id": "d", "text": "Dördüncü" }
+            ],
+            "correctOptionId": "d",
+            "explanation": "Yugoslavya 1930 Dünya Kupası'nda 4. olmuştur."
+          }
+        ],
+        "400": [
+          {
+            "id": "sirbistan-400-1",
+            "categoryId": "sirbistan",
+            "point": 400,
+            "questionText": "Hangi ünlü futbolcu hem Yugoslavya hem de Sırbistan için Dünya Kupası'nda forma giymiştir?",
+            "options": [
+              { "id": "a", "text": "Dejan Stanković" },
+              { "id": "b", "text": "Dragan Stojković" },
+              { "id": "c", "text": "Nemanja Vidić" },
+              { "id": "d", "text": "Aleksandar Kolarov" }
+            ],
+            "correctOptionId": "a",
+            "explanation": "Dejan Stanković hem 1998 ve 2006'da Sırbistan-Karadağ (eski Yugoslavya) hem de 2010'da Sırbistan için oynadı."
+          }
+        ],
+        "500": [
+          {
+            "id": "sirbistan-500-1",
+            "categoryId": "sirbistan",
+            "point": 500,
+            "questionText": "1962 Dünya Kupası'nda Yugoslavya yarı finalde hangi ülkeye kaybetmiştir?",
+            "options": [
+              { "id": "a", "text": "Brezilya" },
+              { "id": "b", "text": "Şili" },
+              { "id": "c", "text": "Çekoslovakya" },
+              { "id": "d", "text": "İngiltere" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Yugoslavya 1962 yarı finalinde Çekoslovakya'ya 3-1 yenilmiştir."
+          }
+        ]
+      }
+    },
+    {
+      "id": "almanya",
+      "title": "Almanya",
+      "questionsByPoint": {
+        "100": [
+          {
+            "id": "almanya-100-1",
+            "categoryId": "almanya",
+            "point": 100,
+            "questionText": "Almanya kaç kez Dünya Kupası şampiyonu olmuştur?",
+            "options": [
+              { "id": "a", "text": "2" },
+              { "id": "b", "text": "3" },
+              { "id": "c", "text": "4" },
+              { "id": "d", "text": "5" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Almanya 4 kez (1954, 1974, 1990, 2014) Dünya Kupası şampiyonu olmuştur."
+          }
+        ],
+        "200": [
+          {
+            "id": "almanya-200-1",
+            "categoryId": "almanya",
+            "point": 200,
+            "questionText": "Almanya 2014 Dünya Kupası finalinde hangi ülkeyi yenerek şampiyon olmuştur?",
+            "options": [
+              { "id": "a", "text": "Brezilya" },
+              { "id": "b", "text": "Hollanda" },
+              { "id": "c", "text": "Arjantin" },
+              { "id": "d", "text": "İspanya" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Almanya 2014 finalinde Arjantin'i 1-0 yenerek şampiyon olmuştur."
+          }
+        ],
+        "300": [
+          {
+            "id": "almanya-300-1",
+            "categoryId": "almanya",
+            "point": 300,
+            "questionText": "2014 Dünya Kupası finalinde Almanya'ya galibiyeti getiren golü kim atmıştır?",
+            "options": [
+              { "id": "a", "text": "Thomas Müller" },
+              { "id": "b", "text": "Mario Götze" },
+              { "id": "c", "text": "Miroslav Klose" },
+              { "id": "d", "text": "Mesut Özil" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "Mario Götze uzatmalarda attığı golle Almanya'yı şampiyon yaptı."
+          }
+        ],
+        "400": [
+          {
+            "id": "almanya-400-1",
+            "categoryId": "almanya",
+            "point": 400,
+            "questionText": "Almanya 2014 Dünya Kupası yarı finalinde Brezilya'yı kaç-kaç yenmiştir?",
+            "options": [
+              { "id": "a", "text": "5-0" },
+              { "id": "b", "text": "6-1" },
+              { "id": "c", "text": "7-1" },
+              { "id": "d", "text": "8-0" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Almanya tarihi bir skorla Brezilya'yı 7-1 yenerek finale yükseldi. Bu maç 'Mineirazo' olarak bilinir."
+          }
+        ],
+        "500": [
+          {
+            "id": "almanya-500-1",
+            "categoryId": "almanya",
+            "point": 500,
+            "questionText": "Dünya Kupası tarihinin en golcü oyuncusu olan Miroslav Klose toplamda kaç gol atmıştır?",
+            "options": [
+              { "id": "a", "text": "14" },
+              { "id": "b", "text": "15" },
+              { "id": "c", "text": "16" },
+              { "id": "d", "text": "17" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Miroslav Klose 16 golle Dünya Kupası tarihinin en golcü oyuncusudur."
+          }
+        ]
+      }
+    },
+    {
+      "id": "fransa",
+      "title": "Fransa",
+      "questionsByPoint": {
+        "100": [
+          {
+            "id": "fransa-100-1",
+            "categoryId": "fransa",
+            "point": 100,
+            "questionText": "Fransa kaç kez Dünya Kupası şampiyonu olmuştur?",
+            "options": [
+              { "id": "a", "text": "1" },
+              { "id": "b", "text": "2" },
+              { "id": "c", "text": "3" },
+              { "id": "d", "text": "4" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "Fransa 1998 ve 2018'de olmak üzere 2 kez Dünya Kupası şampiyonu olmuştur."
+          }
+        ],
+        "200": [
+          {
+            "id": "fransa-200-1",
+            "categoryId": "fransa",
+            "point": 200,
+            "questionText": "Fransa 2018 Dünya Kupası finalinde hangi ülkeyi yenerek şampiyon olmuştur?",
+            "options": [
+              { "id": "a", "text": "Belçika" },
+              { "id": "b", "text": "İngiltere" },
+              { "id": "c", "text": "Hırvatistan" },
+              { "id": "d", "text": "Brezilya" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Fransa 2018 finalinde Hırvatistan'ı 4-2 yenerek şampiyon olmuştur."
+          }
+        ],
+        "300": [
+          {
+            "id": "fransa-300-1",
+            "categoryId": "fransa",
+            "point": 300,
+            "questionText": "Fransa'nın 1998 Dünya Kupası finalindeki rakibi kimdi?",
+            "options": [
+              { "id": "a", "text": "İtalya" },
+              { "id": "b", "text": "Brezilya" },
+              { "id": "c", "text": "Almanya" },
+              { "id": "d", "text": "Hollanda" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "Fransa 1998 finalinde ev sahipliğinde Brezilya'yı 3-0 yenerek ilk kez şampiyon oldu."
+          }
+        ],
+        "400": [
+          {
+            "id": "fransa-400-1",
+            "categoryId": "fransa",
+            "point": 400,
+            "questionText": "1998 Dünya Kupası finalinde Fransa'ya 2 gol atan oyuncu kimdir?",
+            "options": [
+              { "id": "a", "text": "Zinedine Zidane" },
+              { "id": "b", "text": "Thierry Henry" },
+              { "id": "c", "text": "Didier Deschamps" },
+              { "id": "d", "text": "Emmanuel Petit" }
+            ],
+            "correctOptionId": "a",
+            "explanation": "Zinedine Zidane finalde kafayla 2 gol atarak Fransa'yı şampiyonluğa taşıdı."
+          }
+        ],
+        "500": [
+          {
+            "id": "fransa-500-1",
+            "categoryId": "fransa",
+            "point": 500,
+            "questionText": "2006 Dünya Kupası finalinde Zinedine Zidane'ın kırmızı kart görmesine neden olan İtalyan oyuncu kimdir?",
+            "options": [
+              { "id": "a", "text": "Fabio Cannavaro" },
+              { "id": "b", "text": "Marco Materazzi" },
+              { "id": "c", "text": "Andrea Pirlo" },
+              { "id": "d", "text": "Gianluigi Buffon" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "Zidane, Marco Materazzi'ye kafa atarak kırmızı kart gördü ve Fransa finali penaltılarda kaybetti."
+          }
+        ]
+      }
+    },
+    {
+      "id": "italya",
+      "title": "İtalya",
+      "questionsByPoint": {
+        "100": [
+          {
+            "id": "italya-100-1",
+            "categoryId": "italya",
+            "point": 100,
+            "questionText": "İtalya kaç kez Dünya Kupası şampiyonu olmuştur?",
+            "options": [
+              { "id": "a", "text": "2" },
+              { "id": "b", "text": "3" },
+              { "id": "c", "text": "4" },
+              { "id": "d", "text": "5" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "İtalya 4 kez (1934, 1938, 1982, 2006) Dünya Kupası şampiyonu olmuştur."
+          }
+        ],
+        "200": [
+          {
+            "id": "italya-200-1",
+            "categoryId": "italya",
+            "point": 200,
+            "questionText": "İtalya 2006 Dünya Kupası finalinde hangi ülkeyi penaltılarda yenerek şampiyon olmuştur?",
+            "options": [
+              { "id": "a", "text": "Almanya" },
+              { "id": "b", "text": "Fransa" },
+              { "id": "c", "text": "Brezilya" },
+              { "id": "d", "text": "Hollanda" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "İtalya 2006 finalinde Fransa'yı penaltılarda 5-3 yenerek şampiyon olmuştur."
+          }
+        ],
+        "300": [
+          {
+            "id": "italya-300-1",
+            "categoryId": "italya",
+            "point": 300,
+            "questionText": "İtalya üst üste iki kez Dünya Kupası şampiyonu olmuştur. Bu yıllar hangileridir?",
+            "options": [
+              { "id": "a", "text": "1930 ve 1934" },
+              { "id": "b", "text": "1934 ve 1938" },
+              { "id": "c", "text": "1982 ve 1986" },
+              { "id": "d", "text": "2002 ve 2006" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "İtalya 1934 ve 1938'de üst üste şampiyon olmuştur."
+          }
+        ],
+        "400": [
+          {
+            "id": "italya-400-1",
+            "categoryId": "italya",
+            "point": 400,
+            "questionText": "1982 Dünya Kupası'nda İtalya'nın yıldız golcüsü olan ve turnuvada gol kralı olan oyuncu kimdir?",
+            "options": [
+              { "id": "a", "text": "Roberto Baggio" },
+              { "id": "b", "text": "Paolo Rossi" },
+              { "id": "c", "text": "Alessandro Del Piero" },
+              { "id": "d", "text": "Francesco Totti" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "Paolo Rossi 1982'de 6 golle gol kralı oldu ve İtalya'yı şampiyonluğa taşıdı."
+          }
+        ],
+        "500": [
+          {
+            "id": "italya-500-1",
+            "categoryId": "italya",
+            "point": 500,
+            "questionText": "1994 Dünya Kupası finalinde İtalya'nın kaçırdığı penaltı ile şampiyonluğu kaçıran efsane oyuncu kimdir?",
+            "options": [
+              { "id": "a", "text": "Paolo Maldini" },
+              { "id": "b", "text": "Franco Baresi" },
+              { "id": "c", "text": "Roberto Baggio" },
+              { "id": "d", "text": "Dino Baggio" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Roberto Baggio penaltı atışını auta göndererek Brezilya'nın şampiyon olmasına neden oldu."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ispanya",
+      "title": "İspanya",
+      "questionsByPoint": {
+        "100": [
+          {
+            "id": "ispanya-100-1",
+            "categoryId": "ispanya",
+            "point": 100,
+            "questionText": "İspanya kaç kez Dünya Kupası şampiyonu olmuştur?",
+            "options": [
+              { "id": "a", "text": "0" },
+              { "id": "b", "text": "1" },
+              { "id": "c", "text": "2" },
+              { "id": "d", "text": "3" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "İspanya 2010 yılında ilk ve tek kez Dünya Kupası şampiyonu olmuştur."
+          }
+        ],
+        "200": [
+          {
+            "id": "ispanya-200-1",
+            "categoryId": "ispanya",
+            "point": 200,
+            "questionText": "İspanya 2010 Dünya Kupası finalinde hangi ülkeyi yenerek şampiyon olmuştur?",
+            "options": [
+              { "id": "a", "text": "Almanya" },
+              { "id": "b", "text": "Brezilya" },
+              { "id": "c", "text": "Hollanda" },
+              { "id": "d", "text": "Uruguay" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "İspanya 2010 finalinde Hollanda'yı uzatmalarda 1-0 yenerek ilk kez şampiyon oldu."
+          }
+        ],
+        "300": [
+          {
+            "id": "ispanya-300-1",
+            "categoryId": "ispanya",
+            "point": 300,
+            "questionText": "2010 Dünya Kupası finalinde İspanya'ya galibiyeti getiren golü kim atmıştır?",
+            "options": [
+              { "id": "a", "text": "Fernando Torres" },
+              { "id": "b", "text": "David Villa" },
+              { "id": "c", "text": "Andrés Iniesta" },
+              { "id": "d", "text": "Xavi Hernández" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Andrés Iniesta uzatmanın 116. dakikasında attığı golle İspanya'yı şampiyon yaptı."
+          }
+        ],
+        "400": [
+          {
+            "id": "ispanya-400-1",
+            "categoryId": "ispanya",
+            "point": 400,
+            "questionText": "2010 Dünya Kupası'nda İspanya'nın teknik direktörü kimdi?",
+            "options": [
+              { "id": "a", "text": "Luis Aragonés" },
+              { "id": "b", "text": "Vicente del Bosque" },
+              { "id": "c", "text": "Julen Lopetegui" },
+              { "id": "d", "text": "Luis Enrique" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "Vicente del Bosque İspanya'yı 2010 Dünya Kupası şampiyonluğuna taşımıştır."
+          }
+        ],
+        "500": [
+          {
+            "id": "ispanya-500-1",
+            "categoryId": "ispanya",
+            "point": 500,
+            "questionText": "2010 Dünya Kupası'nda İspanya grup aşamasında hangi ülkeye şaşırtıcı bir yenilgi aldı?",
+            "options": [
+              { "id": "a", "text": "Portekiz" },
+              { "id": "b", "text": "Şili" },
+              { "id": "c", "text": "İsviçre" },
+              { "id": "d", "text": "Honduras" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "İspanya açılış maçında İsviçre'ye 1-0 yenildi ancak sonrasında tüm maçları kazanarak şampiyon oldu."
+          }
+        ]
+      }
+    },
+    {
+      "id": "portekiz",
+      "title": "Portekiz",
+      "questionsByPoint": {
+        "100": [
+          {
+            "id": "portekiz-100-1",
+            "categoryId": "portekiz",
+            "point": 100,
+            "questionText": "Portekiz Dünya Kupası'nda en iyi kaçıncılık derecesini elde etmiştir?",
+            "options": [
+              { "id": "a", "text": "1." },
+              { "id": "b", "text": "2." },
+              { "id": "c", "text": "3." },
+              { "id": "d", "text": "4." }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Portekiz 1966 Dünya Kupası'nda 3. olarak en iyi derecesini elde etmiştir."
+          }
+        ],
+        "200": [
+          {
+            "id": "portekiz-200-1",
+            "categoryId": "portekiz",
+            "point": 200,
+            "questionText": "Cristiano Ronaldo kaç Dünya Kupası'nda forma giymiştir?",
+            "options": [
+              { "id": "a", "text": "3" },
+              { "id": "b", "text": "4" },
+              { "id": "c", "text": "5" },
+              { "id": "d", "text": "6" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Cristiano Ronaldo 2006, 2010, 2014, 2018 ve 2022 olmak üzere 5 Dünya Kupası'nda oynadı."
+          }
+        ],
+        "300": [
+          {
+            "id": "portekiz-300-1",
+            "categoryId": "portekiz",
+            "point": 300,
+            "questionText": "1966 Dünya Kupası'nda Portekiz'in efsanevi golcüsü kimdir?",
+            "options": [
+              { "id": "a", "text": "Cristiano Ronaldo" },
+              { "id": "b", "text": "Eusébio" },
+              { "id": "c", "text": "Luís Figo" },
+              { "id": "d", "text": "Rui Costa" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "Eusébio 1966'da 9 golle gol kralı oldu ve Portekiz'i 3. lüğe taşıdı."
+          }
+        ],
+        "400": [
+          {
+            "id": "portekiz-400-1",
+            "categoryId": "portekiz",
+            "point": 400,
+            "questionText": "2018 Dünya Kupası'nda Portekiz ile İspanya'nın maçı kaç-kaç bitmiştir?",
+            "options": [
+              { "id": "a", "text": "2-2" },
+              { "id": "b", "text": "3-3" },
+              { "id": "c", "text": "4-4" },
+              { "id": "d", "text": "1-1" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "Ronaldo'nun hat-trick yaptığı maç 3-3 berabere bitti."
+          }
+        ],
+        "500": [
+          {
+            "id": "portekiz-500-1",
+            "categoryId": "portekiz",
+            "point": 500,
+            "questionText": "1966 Dünya Kupası yarı finalinde Portekiz hangi ülkeye kaybetti?",
+            "options": [
+              { "id": "a", "text": "Almanya" },
+              { "id": "b", "text": "İngiltere" },
+              { "id": "c", "text": "Brezilya" },
+              { "id": "d", "text": "Uruguay" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "Portekiz yarı finalde ev sahibi İngiltere'ye 2-1 yenildi."
+          }
+        ]
+      }
+    },
+    {
+      "id": "arjantin",
+      "title": "Arjantin",
+      "questionsByPoint": {
+        "100": [
+          {
+            "id": "arjantin-100-1",
+            "categoryId": "arjantin",
+            "point": 100,
+            "questionText": "Arjantin kaç kez Dünya Kupası şampiyonu olmuştur?",
+            "options": [
+              { "id": "a", "text": "1" },
+              { "id": "b", "text": "2" },
+              { "id": "c", "text": "3" },
+              { "id": "d", "text": "4" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Arjantin 3 kez (1978, 1986, 2022) Dünya Kupası şampiyonu olmuştur."
+          }
+        ],
+        "200": [
+          {
+            "id": "arjantin-200-1",
+            "categoryId": "arjantin",
+            "point": 200,
+            "questionText": "Arjantin 2022 Dünya Kupası finalinde hangi ülkeyi penaltılarda yenerek şampiyon olmuştur?",
+            "options": [
+              { "id": "a", "text": "Brezilya" },
+              { "id": "b", "text": "Fransa" },
+              { "id": "c", "text": "Hollanda" },
+              { "id": "d", "text": "Hırvatistan" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "Arjantin 2022 finalinde Fransa'yı penaltılarda 4-2 yenerek şampiyon oldu."
+          }
+        ],
+        "300": [
+          {
+            "id": "arjantin-300-1",
+            "categoryId": "arjantin",
+            "point": 300,
+            "questionText": "Diego Maradona'nın 'Tanrı'nın Eli' golünü attığı maç hangi ülkeye karşıydı?",
+            "options": [
+              { "id": "a", "text": "Brezilya" },
+              { "id": "b", "text": "Almanya" },
+              { "id": "c", "text": "İngiltere" },
+              { "id": "d", "text": "İtalya" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Maradona 1986 çeyrek finalinde İngiltere'ye karşı eliyle ve ardından solo bir golle 2 gol attı."
+          }
+        ],
+        "400": [
+          {
+            "id": "arjantin-400-1",
+            "categoryId": "arjantin",
+            "point": 400,
+            "questionText": "Arjantin'in 1986 Dünya Kupası finalindeki rakibi ve skor nedir?",
+            "options": [
+              { "id": "a", "text": "Batı Almanya 3-2" },
+              { "id": "b", "text": "İtalya 3-1" },
+              { "id": "c", "text": "Hollanda 2-1" },
+              { "id": "d", "text": "Brezilya 3-0" }
+            ],
+            "correctOptionId": "a",
+            "explanation": "Arjantin finalde Batı Almanya'yı 3-2 yenerek şampiyon oldu."
+          }
+        ],
+        "500": [
+          {
+            "id": "arjantin-500-1",
+            "categoryId": "arjantin",
+            "point": 500,
+            "questionText": "Lionel Messi 2022 Dünya Kupası'nda toplamda kaç gol atmıştır?",
+            "options": [
+              { "id": "a", "text": "5" },
+              { "id": "b", "text": "6" },
+              { "id": "c", "text": "7" },
+              { "id": "d", "text": "8" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Messi 2022 Dünya Kupası'nda 7 gol atarak Altın Top ödülünü kazandı."
+          }
+        ]
+      }
+    },
+    {
+      "id": "genel",
+      "title": "Genel",
+      "questionsByPoint": {
+        "100": [
+          {
+            "id": "genel-100-1",
+            "categoryId": "genel",
+            "point": 100,
+            "questionText": "İlk Dünya Kupası hangi yıl düzenlenmiştir?",
+            "options": [
+              { "id": "a", "text": "1928" },
+              { "id": "b", "text": "1930" },
+              { "id": "c", "text": "1932" },
+              { "id": "d", "text": "1934" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "İlk Dünya Kupası 1930 yılında Uruguay'da düzenlenmiştir."
+          }
+        ],
+        "200": [
+          {
+            "id": "genel-200-1",
+            "categoryId": "genel",
+            "point": 200,
+            "questionText": "2022 Dünya Kupası hangi ülkede düzenlenmiştir?",
+            "options": [
+              { "id": "a", "text": "Birleşik Arap Emirlikleri" },
+              { "id": "b", "text": "Suudi Arabistan" },
+              { "id": "c", "text": "Katar" },
+              { "id": "d", "text": "Bahreyn" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "2022 Dünya Kupası Katar'da düzenlenmiştir."
+          }
+        ],
+        "300": [
+          {
+            "id": "genel-300-1",
+            "categoryId": "genel",
+            "point": 300,
+            "questionText": "Dünya Kupası kupasının adı nedir?",
+            "options": [
+              { "id": "a", "text": "FIFA Kupası" },
+              { "id": "b", "text": "Jules Rimet Kupası" },
+              { "id": "c", "text": "Altın Top" },
+              { "id": "d", "text": "Dünya Şampiyonluk Kupası" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "Dünya Kupası kupası, FIFA'nın kurucularından Jules Rimet'nin adını taşır."
+          }
+        ],
+        "400": [
+          {
+            "id": "genel-400-1",
+            "categoryId": "genel",
+            "point": 400,
+            "questionText": "Dünya Kupası kaç yılda bir düzenlenmektedir?",
+            "options": [
+              { "id": "a", "text": "2 yılda bir" },
+              { "id": "b", "text": "3 yılda bir" },
+              { "id": "c", "text": "4 yılda bir" },
+              { "id": "d", "text": "5 yılda bir" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Dünya Kupası 4 yılda bir düzenlenmektedir."
+          }
+        ],
+        "500": [
+          {
+            "id": "genel-500-1",
+            "categoryId": "genel",
+            "point": 500,
+            "questionText": "Tek bir Dünya Kupası maçında en fazla gol atan oyuncu kimdir ve kaç gol atmıştır?",
+            "options": [
+              { "id": "a", "text": "Just Fontaine - 5 gol" },
+              { "id": "b", "text": "Oleg Salenko - 5 gol" },
+              { "id": "c", "text": "Gerd Müller - 4 gol" },
+              { "id": "d", "text": "Eusébio - 4 gol" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "Rus futbolcu Oleg Salenko, 1994'te Kamerun'a karşı tek maçta 5 gol atarak rekor kırmıştır."
+          }
+        ]
+      }
+    }
+  ],
+  "finalRoundQuestions": [
+    {
+      "id": "final-1",
+      "questionText": "Dünya Kupası tarihinde toplam kaç farklı ülke şampiyonluk kupasını kazanmıştır?",
+      "correctAnswer": 8,
+      "explanation": "8 farklı ülke şampiyon olmuştur: Brezilya (5), Almanya (4), İtalya (4), Arjantin (3), Fransa (2), Uruguay (2), İspanya (1), İngiltere (1)."
+    },
+    {
+      "id": "final-2",
+      "questionText": "2014 Dünya Kupası'nda toplam kaç gol atılmıştır?",
+      "correctAnswer": 171,
+      "explanation": "2014 Brezilya Dünya Kupası'nda toplam 171 gol atılmıştır."
+    },
+    {
+      "id": "final-3",
+      "questionText": "İlk Dünya Kupası'na (1930) kaç takım katılmıştır?",
+      "correctAnswer": 13,
+      "explanation": "1930 Uruguay Dünya Kupası'na 13 takım katılmıştır."
+    },
+    {
+      "id": "final-4",
+      "questionText": "Dünya Kupası finallerinde en fazla maç yapan futbolcu kaç maça çıkmıştır?",
+      "correctAnswer": 26,
+      "explanation": "Lothar Matthäus (Almanya) 5 Dünya Kupası'nda toplam 26 maça çıkmıştır."
+    },
+    {
+      "id": "final-5",
+      "questionText": "2018 Dünya Kupası'nda Fransa kaç gol atarak şampiyon olmuştur?",
+      "correctAnswer": 14,
+      "explanation": "Fransa 2018 Dünya Kupası'nda turnuva boyunca toplam 14 gol atarak şampiyon olmuştur."
+    }
+  ]
+}

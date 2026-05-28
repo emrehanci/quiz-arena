@@ -1,0 +1,900 @@
+{
+  "id": "world-cup-001-en",
+  "name": "World Cup Quiz",
+  "description": "Country-specific questions from World Cup history",
+  "finalRoundEnabled": true,
+  "categories": [
+    {
+      "id": "turkey",
+      "title": "Turkey",
+      "questionsByPoint": {
+        "100": [
+          {
+            "id": "turkey-100-1",
+            "categoryId": "turkey",
+            "point": 100,
+            "questionText": "How many times has Turkey participated in the World Cup finals?",
+            "options": [
+              { "id": "a", "text": "1" },
+              { "id": "b", "text": "2" },
+              { "id": "c", "text": "3" },
+              { "id": "d", "text": "4" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "Turkey has participated in the World Cup finals twice, in 1954 and 2002."
+          }
+        ],
+        "200": [
+          {
+            "id": "turkey-200-1",
+            "categoryId": "turkey",
+            "point": 200,
+            "questionText": "What place did Turkey finish in the 2002 World Cup?",
+            "options": [
+              { "id": "a", "text": "1st" },
+              { "id": "b", "text": "2nd" },
+              { "id": "c", "text": "3rd" },
+              { "id": "d", "text": "4th" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Turkey finished 3rd in the 2002 World Cup, achieving their best result."
+          }
+        ],
+        "300": [
+          {
+            "id": "turkey-300-1",
+            "categoryId": "turkey",
+            "point": 300,
+            "questionText": "Who was the head coach of the Turkish National Team at the 2002 World Cup?",
+            "options": [
+              { "id": "a", "text": "Fatih Terim" },
+              { "id": "b", "text": "Şenol Güneş" },
+              { "id": "c", "text": "Mustafa Denizli" },
+              { "id": "d", "text": "Ersun Yanal" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "Şenol Güneş coached Turkey at the 2002 World Cup."
+          }
+        ],
+        "400": [
+          {
+            "id": "turkey-400-1",
+            "categoryId": "turkey",
+            "point": 400,
+            "questionText": "Which country did Turkey face in the 2002 World Cup third-place match?",
+            "options": [
+              { "id": "a", "text": "Brazil" },
+              { "id": "b", "text": "Germany" },
+              { "id": "c", "text": "South Korea" },
+              { "id": "d", "text": "Spain" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Turkey defeated host nation South Korea 3-2 in the third-place match to win the bronze medal."
+          }
+        ],
+        "500": [
+          {
+            "id": "turkey-500-1",
+            "categoryId": "turkey",
+            "point": 500,
+            "questionText": "What was the opponent and result of Turkey's first match at the 1954 World Cup?",
+            "options": [
+              { "id": "a", "text": "West Germany 4-1" },
+              { "id": "b", "text": "Hungary 7-0" },
+              { "id": "c", "text": "South Korea 7-0" },
+              { "id": "d", "text": "Switzerland 2-1" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Turkey won their first World Cup match 7-0 against South Korea."
+          }
+        ]
+      }
+    },
+    {
+      "id": "brazil",
+      "title": "Brazil",
+      "questionsByPoint": {
+        "100": [
+          {
+            "id": "brazil-100-1",
+            "categoryId": "brazil",
+            "point": 100,
+            "questionText": "How many times has Brazil won the World Cup?",
+            "options": [
+              { "id": "a", "text": "3" },
+              { "id": "b", "text": "4" },
+              { "id": "c", "text": "5" },
+              { "id": "d", "text": "6" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Brazil has won the World Cup 5 times (1958, 1962, 1970, 1994, 2002)."
+          }
+        ],
+        "200": [
+          {
+            "id": "brazil-200-1",
+            "categoryId": "brazil",
+            "point": 200,
+            "questionText": "Who was Brazil's opponent in the 2002 World Cup final?",
+            "options": [
+              { "id": "a", "text": "France" },
+              { "id": "b", "text": "Italy" },
+              { "id": "c", "text": "Germany" },
+              { "id": "d", "text": "Argentina" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Brazil defeated Germany 2-0 in the 2002 final to become champions."
+          }
+        ],
+        "300": [
+          {
+            "id": "brazil-300-1",
+            "categoryId": "brazil",
+            "point": 300,
+            "questionText": "How many times has Brazil reached the World Cup final?",
+            "options": [
+              { "id": "a", "text": "5" },
+              { "id": "b", "text": "6" },
+              { "id": "c", "text": "7" },
+              { "id": "d", "text": "8" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Brazil has reached the final 7 times (1950, 1958, 1962, 1970, 1994, 1998, 2002)."
+          }
+        ],
+        "400": [
+          {
+            "id": "brazil-400-1",
+            "categoryId": "brazil",
+            "point": 400,
+            "questionText": "How many World Cup finals did Pelé win as champion?",
+            "options": [
+              { "id": "a", "text": "1" },
+              { "id": "b", "text": "2" },
+              { "id": "c", "text": "3" },
+              { "id": "d", "text": "4" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Pelé won the World Cup 3 times in 1958, 1962, and 1970."
+          }
+        ],
+        "500": [
+          {
+            "id": "brazil-500-1",
+            "categoryId": "brazil",
+            "point": 500,
+            "questionText": "Which country won the 1950 World Cup final played in Brazil?",
+            "options": [
+              { "id": "a", "text": "Brazil" },
+              { "id": "b", "text": "Uruguay" },
+              { "id": "c", "text": "Argentina" },
+              { "id": "d", "text": "Sweden" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "In the 1950 final, Uruguay defeated Brazil 2-1 at Maracanã. This match is known as the 'Maracanazo'."
+          }
+        ]
+      }
+    },
+    {
+      "id": "serbia",
+      "title": "Serbia",
+      "questionsByPoint": {
+        "100": [
+          {
+            "id": "serbia-100-1",
+            "categoryId": "serbia",
+            "point": 100,
+            "questionText": "How many times has Yugoslavia (including Serbia) reached the World Cup semi-finals?",
+            "options": [
+              { "id": "a", "text": "1" },
+              { "id": "b", "text": "2" },
+              { "id": "c", "text": "3" },
+              { "id": "d", "text": "4" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "Yugoslavia reached the semi-finals twice, in 1930 and 1962."
+          }
+        ],
+        "200": [
+          {
+            "id": "serbia-200-1",
+            "categoryId": "serbia",
+            "point": 200,
+            "questionText": "In which year did Serbia first participate in the World Cup as an independent country?",
+            "options": [
+              { "id": "a", "text": "2006" },
+              { "id": "b", "text": "2010" },
+              { "id": "c", "text": "2014" },
+              { "id": "d", "text": "2018" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "Serbia first participated in the World Cup as an independent country in 2010."
+          }
+        ],
+        "300": [
+          {
+            "id": "serbia-300-1",
+            "categoryId": "serbia",
+            "point": 300,
+            "questionText": "What was Yugoslavia's best result in their first World Cup (1930)?",
+            "options": [
+              { "id": "a", "text": "Champion" },
+              { "id": "b", "text": "Second" },
+              { "id": "c", "text": "Third" },
+              { "id": "d", "text": "Fourth" }
+            ],
+            "correctOptionId": "d",
+            "explanation": "Yugoslavia finished 4th in the 1930 World Cup."
+          }
+        ],
+        "400": [
+          {
+            "id": "serbia-400-1",
+            "categoryId": "serbia",
+            "point": 400,
+            "questionText": "Which famous player has played for both Yugoslavia and Serbia in World Cup tournaments?",
+            "options": [
+              { "id": "a", "text": "Dejan Stanković" },
+              { "id": "b", "text": "Dragan Stojković" },
+              { "id": "c", "text": "Nemanja Vidić" },
+              { "id": "d", "text": "Aleksandar Kolarov" }
+            ],
+            "correctOptionId": "a",
+            "explanation": "Dejan Stanković played for Serbia and Montenegro (former Yugoslavia) in 1998 and 2006, and for Serbia in 2010."
+          }
+        ],
+        "500": [
+          {
+            "id": "serbia-500-1",
+            "categoryId": "serbia",
+            "point": 500,
+            "questionText": "Which country did Yugoslavia lose to in the 1962 World Cup semi-final?",
+            "options": [
+              { "id": "a", "text": "Brazil" },
+              { "id": "b", "text": "Chile" },
+              { "id": "c", "text": "Czechoslovakia" },
+              { "id": "d", "text": "England" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Yugoslavia lost 3-1 to Czechoslovakia in the 1962 semi-final."
+          }
+        ]
+      }
+    },
+    {
+      "id": "germany",
+      "title": "Germany",
+      "questionsByPoint": {
+        "100": [
+          {
+            "id": "germany-100-1",
+            "categoryId": "germany",
+            "point": 100,
+            "questionText": "How many times has Germany won the World Cup?",
+            "options": [
+              { "id": "a", "text": "2" },
+              { "id": "b", "text": "3" },
+              { "id": "c", "text": "4" },
+              { "id": "d", "text": "5" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Germany has won the World Cup 4 times (1954, 1974, 1990, 2014)."
+          }
+        ],
+        "200": [
+          {
+            "id": "germany-200-1",
+            "categoryId": "germany",
+            "point": 200,
+            "questionText": "Which country did Germany defeat in the 2014 World Cup final?",
+            "options": [
+              { "id": "a", "text": "Brazil" },
+              { "id": "b", "text": "Netherlands" },
+              { "id": "c", "text": "Argentina" },
+              { "id": "d", "text": "Spain" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Germany defeated Argentina 1-0 in the 2014 final to become champions."
+          }
+        ],
+        "300": [
+          {
+            "id": "germany-300-1",
+            "categoryId": "germany",
+            "point": 300,
+            "questionText": "Who scored the winning goal for Germany in the 2014 World Cup final?",
+            "options": [
+              { "id": "a", "text": "Thomas Müller" },
+              { "id": "b", "text": "Mario Götze" },
+              { "id": "c", "text": "Miroslav Klose" },
+              { "id": "d", "text": "Mesut Özil" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "Mario Götze scored the winning goal in extra time to make Germany champions."
+          }
+        ],
+        "400": [
+          {
+            "id": "germany-400-1",
+            "categoryId": "germany",
+            "point": 400,
+            "questionText": "What was the score when Germany defeated Brazil in the 2014 World Cup semi-final?",
+            "options": [
+              { "id": "a", "text": "5-0" },
+              { "id": "b", "text": "6-1" },
+              { "id": "c", "text": "7-1" },
+              { "id": "d", "text": "8-0" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Germany defeated Brazil 7-1 in a historic scoreline to advance to the final. This match is known as the 'Mineirazo'."
+          }
+        ],
+        "500": [
+          {
+            "id": "germany-500-1",
+            "categoryId": "germany",
+            "point": 500,
+            "questionText": "How many goals did Miroslav Klose, the all-time World Cup top scorer, score in total?",
+            "options": [
+              { "id": "a", "text": "14" },
+              { "id": "b", "text": "15" },
+              { "id": "c", "text": "16" },
+              { "id": "d", "text": "17" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Miroslav Klose is the all-time World Cup top scorer with 16 goals."
+          }
+        ]
+      }
+    },
+    {
+      "id": "france",
+      "title": "France",
+      "questionsByPoint": {
+        "100": [
+          {
+            "id": "france-100-1",
+            "categoryId": "france",
+            "point": 100,
+            "questionText": "How many times has France won the World Cup?",
+            "options": [
+              { "id": "a", "text": "1" },
+              { "id": "b", "text": "2" },
+              { "id": "c", "text": "3" },
+              { "id": "d", "text": "4" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "France has won the World Cup twice, in 1998 and 2018."
+          }
+        ],
+        "200": [
+          {
+            "id": "france-200-1",
+            "categoryId": "france",
+            "point": 200,
+            "questionText": "Which country did France defeat in the 2018 World Cup final?",
+            "options": [
+              { "id": "a", "text": "Belgium" },
+              { "id": "b", "text": "England" },
+              { "id": "c", "text": "Croatia" },
+              { "id": "d", "text": "Brazil" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "France defeated Croatia 4-2 in the 2018 final to become champions."
+          }
+        ],
+        "300": [
+          {
+            "id": "france-300-1",
+            "categoryId": "france",
+            "point": 300,
+            "questionText": "Who was France's opponent in the 1998 World Cup final?",
+            "options": [
+              { "id": "a", "text": "Italy" },
+              { "id": "b", "text": "Brazil" },
+              { "id": "c", "text": "Germany" },
+              { "id": "d", "text": "Netherlands" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "France defeated Brazil 3-0 at home in the 1998 final to become champions for the first time."
+          }
+        ],
+        "400": [
+          {
+            "id": "france-400-1",
+            "categoryId": "france",
+            "point": 400,
+            "questionText": "Who scored 2 goals for France in the 1998 World Cup final?",
+            "options": [
+              { "id": "a", "text": "Zinedine Zidane" },
+              { "id": "b", "text": "Thierry Henry" },
+              { "id": "c", "text": "Didier Deschamps" },
+              { "id": "d", "text": "Emmanuel Petit" }
+            ],
+            "correctOptionId": "a",
+            "explanation": "Zinedine Zidane scored 2 headers in the final to lead France to the championship."
+          }
+        ],
+        "500": [
+          {
+            "id": "france-500-1",
+            "categoryId": "france",
+            "point": 500,
+            "questionText": "Which Italian player provoked Zinedine Zidane's red card in the 2006 World Cup final?",
+            "options": [
+              { "id": "a", "text": "Fabio Cannavaro" },
+              { "id": "b", "text": "Marco Materazzi" },
+              { "id": "c", "text": "Andrea Pirlo" },
+              { "id": "d", "text": "Gianluigi Buffon" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "Zidane headbutted Marco Materazzi and received a red card, and France lost the final on penalties."
+          }
+        ]
+      }
+    },
+    {
+      "id": "italy",
+      "title": "Italy",
+      "questionsByPoint": {
+        "100": [
+          {
+            "id": "italy-100-1",
+            "categoryId": "italy",
+            "point": 100,
+            "questionText": "How many times has Italy won the World Cup?",
+            "options": [
+              { "id": "a", "text": "2" },
+              { "id": "b", "text": "3" },
+              { "id": "c", "text": "4" },
+              { "id": "d", "text": "5" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Italy has won the World Cup 4 times (1934, 1938, 1982, 2006)."
+          }
+        ],
+        "200": [
+          {
+            "id": "italy-200-1",
+            "categoryId": "italy",
+            "point": 200,
+            "questionText": "Which country did Italy defeat on penalties in the 2006 World Cup final?",
+            "options": [
+              { "id": "a", "text": "Germany" },
+              { "id": "b", "text": "France" },
+              { "id": "c", "text": "Brazil" },
+              { "id": "d", "text": "Netherlands" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "Italy defeated France 5-3 on penalties in the 2006 final to become champions."
+          }
+        ],
+        "300": [
+          {
+            "id": "italy-300-1",
+            "categoryId": "italy",
+            "point": 300,
+            "questionText": "Italy won the World Cup consecutively twice. Which years were these?",
+            "options": [
+              { "id": "a", "text": "1930 and 1934" },
+              { "id": "b", "text": "1934 and 1938" },
+              { "id": "c", "text": "1982 and 1986" },
+              { "id": "d", "text": "2002 and 2006" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "Italy won the World Cup consecutively in 1934 and 1938."
+          }
+        ],
+        "400": [
+          {
+            "id": "italy-400-1",
+            "categoryId": "italy",
+            "point": 400,
+            "questionText": "Who was Italy's star striker and top scorer at the 1982 World Cup?",
+            "options": [
+              { "id": "a", "text": "Roberto Baggio" },
+              { "id": "b", "text": "Paolo Rossi" },
+              { "id": "c", "text": "Alessandro Del Piero" },
+              { "id": "d", "text": "Francesco Totti" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "Paolo Rossi won the Golden Boot with 6 goals in 1982 and led Italy to the championship."
+          }
+        ],
+        "500": [
+          {
+            "id": "italy-500-1",
+            "categoryId": "italy",
+            "point": 500,
+            "questionText": "Which legendary player missed the penalty that cost Italy the championship in the 1994 World Cup final?",
+            "options": [
+              { "id": "a", "text": "Paolo Maldini" },
+              { "id": "b", "text": "Franco Baresi" },
+              { "id": "c", "text": "Roberto Baggio" },
+              { "id": "d", "text": "Dino Baggio" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Roberto Baggio sent his penalty over the bar, allowing Brazil to become champions."
+          }
+        ]
+      }
+    },
+    {
+      "id": "spain",
+      "title": "Spain",
+      "questionsByPoint": {
+        "100": [
+          {
+            "id": "spain-100-1",
+            "categoryId": "spain",
+            "point": 100,
+            "questionText": "How many times has Spain won the World Cup?",
+            "options": [
+              { "id": "a", "text": "0" },
+              { "id": "b", "text": "1" },
+              { "id": "c", "text": "2" },
+              { "id": "d", "text": "3" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "Spain won the World Cup for the first and only time in 2010."
+          }
+        ],
+        "200": [
+          {
+            "id": "spain-200-1",
+            "categoryId": "spain",
+            "point": 200,
+            "questionText": "Which country did Spain defeat in the 2010 World Cup final?",
+            "options": [
+              { "id": "a", "text": "Germany" },
+              { "id": "b", "text": "Brazil" },
+              { "id": "c", "text": "Netherlands" },
+              { "id": "d", "text": "Uruguay" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Spain defeated the Netherlands 1-0 in extra time in the 2010 final to become champions for the first time."
+          }
+        ],
+        "300": [
+          {
+            "id": "spain-300-1",
+            "categoryId": "spain",
+            "point": 300,
+            "questionText": "Who scored the winning goal for Spain in the 2010 World Cup final?",
+            "options": [
+              { "id": "a", "text": "Fernando Torres" },
+              { "id": "b", "text": "David Villa" },
+              { "id": "c", "text": "Andrés Iniesta" },
+              { "id": "d", "text": "Xavi Hernández" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Andrés Iniesta scored in the 116th minute of extra time to make Spain champions."
+          }
+        ],
+        "400": [
+          {
+            "id": "spain-400-1",
+            "categoryId": "spain",
+            "point": 400,
+            "questionText": "Who was Spain's head coach at the 2010 World Cup?",
+            "options": [
+              { "id": "a", "text": "Luis Aragonés" },
+              { "id": "b", "text": "Vicente del Bosque" },
+              { "id": "c", "text": "Julen Lopetegui" },
+              { "id": "d", "text": "Luis Enrique" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "Vicente del Bosque led Spain to the 2010 World Cup championship."
+          }
+        ],
+        "500": [
+          {
+            "id": "spain-500-1",
+            "categoryId": "spain",
+            "point": 500,
+            "questionText": "Which country surprisingly defeated Spain in the group stage of the 2010 World Cup?",
+            "options": [
+              { "id": "a", "text": "Portugal" },
+              { "id": "b", "text": "Chile" },
+              { "id": "c", "text": "Switzerland" },
+              { "id": "d", "text": "Honduras" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Spain lost 1-0 to Switzerland in the opening match but went on to win all subsequent matches and become champions."
+          }
+        ]
+      }
+    },
+    {
+      "id": "portugal",
+      "title": "Portugal",
+      "questionsByPoint": {
+        "100": [
+          {
+            "id": "portugal-100-1",
+            "categoryId": "portugal",
+            "point": 100,
+            "questionText": "What is Portugal's best finish at the World Cup?",
+            "options": [
+              { "id": "a", "text": "1st" },
+              { "id": "b", "text": "2nd" },
+              { "id": "c", "text": "3rd" },
+              { "id": "d", "text": "4th" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Portugal finished 3rd at the 1966 World Cup, achieving their best result."
+          }
+        ],
+        "200": [
+          {
+            "id": "portugal-200-1",
+            "categoryId": "portugal",
+            "point": 200,
+            "questionText": "How many World Cups has Cristiano Ronaldo played in?",
+            "options": [
+              { "id": "a", "text": "3" },
+              { "id": "b", "text": "4" },
+              { "id": "c", "text": "5" },
+              { "id": "d", "text": "6" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Cristiano Ronaldo played in 5 World Cups: 2006, 2010, 2014, 2018, and 2022."
+          }
+        ],
+        "300": [
+          {
+            "id": "portugal-300-1",
+            "categoryId": "portugal",
+            "point": 300,
+            "questionText": "Who was Portugal's legendary striker at the 1966 World Cup?",
+            "options": [
+              { "id": "a", "text": "Cristiano Ronaldo" },
+              { "id": "b", "text": "Eusébio" },
+              { "id": "c", "text": "Luís Figo" },
+              { "id": "d", "text": "Rui Costa" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "Eusébio won the Golden Boot with 9 goals in 1966 and led Portugal to third place."
+          }
+        ],
+        "400": [
+          {
+            "id": "portugal-400-1",
+            "categoryId": "portugal",
+            "point": 400,
+            "questionText": "What was the final score of the Portugal vs Spain match at the 2018 World Cup?",
+            "options": [
+              { "id": "a", "text": "2-2" },
+              { "id": "b", "text": "3-3" },
+              { "id": "c", "text": "4-4" },
+              { "id": "d", "text": "1-1" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "The match ended 3-3, with Ronaldo scoring a hat-trick."
+          }
+        ],
+        "500": [
+          {
+            "id": "portugal-500-1",
+            "categoryId": "portugal",
+            "point": 500,
+            "questionText": "Which country did Portugal lose to in the 1966 World Cup semi-final?",
+            "options": [
+              { "id": "a", "text": "Germany" },
+              { "id": "b", "text": "England" },
+              { "id": "c", "text": "Brazil" },
+              { "id": "d", "text": "Uruguay" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "Portugal lost 2-1 to host nation England in the semi-final."
+          }
+        ]
+      }
+    },
+    {
+      "id": "argentina",
+      "title": "Argentina",
+      "questionsByPoint": {
+        "100": [
+          {
+            "id": "argentina-100-1",
+            "categoryId": "argentina",
+            "point": 100,
+            "questionText": "How many times has Argentina won the World Cup?",
+            "options": [
+              { "id": "a", "text": "1" },
+              { "id": "b", "text": "2" },
+              { "id": "c", "text": "3" },
+              { "id": "d", "text": "4" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Argentina has won the World Cup 3 times (1978, 1986, 2022)."
+          }
+        ],
+        "200": [
+          {
+            "id": "argentina-200-1",
+            "categoryId": "argentina",
+            "point": 200,
+            "questionText": "Which country did Argentina defeat on penalties in the 2022 World Cup final?",
+            "options": [
+              { "id": "a", "text": "Brazil" },
+              { "id": "b", "text": "France" },
+              { "id": "c", "text": "Netherlands" },
+              { "id": "d", "text": "Croatia" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "Argentina defeated France 4-2 on penalties in the 2022 final to become champions."
+          }
+        ],
+        "300": [
+          {
+            "id": "argentina-300-1",
+            "categoryId": "argentina",
+            "point": 300,
+            "questionText": "Against which country did Diego Maradona score the 'Hand of God' goal?",
+            "options": [
+              { "id": "a", "text": "Brazil" },
+              { "id": "b", "text": "Germany" },
+              { "id": "c", "text": "England" },
+              { "id": "d", "text": "Italy" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Maradona scored 2 goals against England in the 1986 quarter-final, one with his hand and then a solo goal."
+          }
+        ],
+        "400": [
+          {
+            "id": "argentina-400-1",
+            "categoryId": "argentina",
+            "point": 400,
+            "questionText": "Who was Argentina's opponent and what was the score in the 1986 World Cup final?",
+            "options": [
+              { "id": "a", "text": "West Germany 3-2" },
+              { "id": "b", "text": "Italy 3-1" },
+              { "id": "c", "text": "Netherlands 2-1" },
+              { "id": "d", "text": "Brazil 3-0" }
+            ],
+            "correctOptionId": "a",
+            "explanation": "Argentina defeated West Germany 3-2 in the final to become champions."
+          }
+        ],
+        "500": [
+          {
+            "id": "argentina-500-1",
+            "categoryId": "argentina",
+            "point": 500,
+            "questionText": "How many goals did Lionel Messi score in total at the 2022 World Cup?",
+            "options": [
+              { "id": "a", "text": "5" },
+              { "id": "b", "text": "6" },
+              { "id": "c", "text": "7" },
+              { "id": "d", "text": "8" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Messi scored 7 goals at the 2022 World Cup and won the Golden Ball award."
+          }
+        ]
+      }
+    },
+    {
+      "id": "general",
+      "title": "General",
+      "questionsByPoint": {
+        "100": [
+          {
+            "id": "general-100-1",
+            "categoryId": "general",
+            "point": 100,
+            "questionText": "In which year was the first World Cup held?",
+            "options": [
+              { "id": "a", "text": "1928" },
+              { "id": "b", "text": "1930" },
+              { "id": "c", "text": "1932" },
+              { "id": "d", "text": "1934" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "The first World Cup was held in 1930 in Uruguay."
+          }
+        ],
+        "200": [
+          {
+            "id": "general-200-1",
+            "categoryId": "general",
+            "point": 200,
+            "questionText": "In which country was the 2022 World Cup held?",
+            "options": [
+              { "id": "a", "text": "United Arab Emirates" },
+              { "id": "b", "text": "Saudi Arabia" },
+              { "id": "c", "text": "Qatar" },
+              { "id": "d", "text": "Bahrain" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "The 2022 World Cup was held in Qatar."
+          }
+        ],
+        "300": [
+          {
+            "id": "general-300-1",
+            "categoryId": "general",
+            "point": 300,
+            "questionText": "What is the name of the World Cup trophy?",
+            "options": [
+              { "id": "a", "text": "FIFA Cup" },
+              { "id": "b", "text": "Jules Rimet Cup" },
+              { "id": "c", "text": "Golden Ball" },
+              { "id": "d", "text": "World Championship Cup" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "The World Cup trophy is named after Jules Rimet, one of FIFA's founders."
+          }
+        ],
+        "400": [
+          {
+            "id": "general-400-1",
+            "categoryId": "general",
+            "point": 400,
+            "questionText": "How often is the World Cup held?",
+            "options": [
+              { "id": "a", "text": "Every 2 years" },
+              { "id": "b", "text": "Every 3 years" },
+              { "id": "c", "text": "Every 4 years" },
+              { "id": "d", "text": "Every 5 years" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "The World Cup is held every 4 years."
+          }
+        ],
+        "500": [
+          {
+            "id": "general-500-1",
+            "categoryId": "general",
+            "point": 500,
+            "questionText": "Who is the player who scored the most goals in a single World Cup match, and how many?",
+            "options": [
+              { "id": "a", "text": "Just Fontaine - 5 goals" },
+              { "id": "b", "text": "Oleg Salenko - 5 goals" },
+              { "id": "c", "text": "Gerd Müller - 4 goals" },
+              { "id": "d", "text": "Eusébio - 4 goals" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "Russian footballer Oleg Salenko set the record by scoring 5 goals in a single match against Cameroon in 1994."
+          }
+        ]
+      }
+    }
+  ],
+  "finalRoundQuestions": [
+    {
+      "id": "final-1",
+      "questionText": "How many different countries have won the World Cup championship in total?",
+      "correctAnswer": 8,
+      "explanation": "8 different countries have been champions: Brazil (5), Germany (4), Italy (4), Argentina (3), France (2), Uruguay (2), Spain (1), England (1)."
+    },
+    {
+      "id": "final-2",
+      "questionText": "How many goals were scored in total at the 2014 World Cup?",
+      "correctAnswer": 171,
+      "explanation": "A total of 171 goals were scored at the 2014 Brazil World Cup."
+    },
+    {
+      "id": "final-3",
+      "questionText": "How many teams participated in the first World Cup (1930)?",
+      "correctAnswer": 13,
+      "explanation": "13 teams participated in the 1930 Uruguay World Cup."
+    },
+    {
+      "id": "final-4",
+      "questionText": "How many matches has the player with the most World Cup finals appearances played?",
+      "correctAnswer": 26,
+      "explanation": "Lothar Matthäus (Germany) played a total of 26 matches in 5 World Cups."
+    },
+    {
+      "id": "final-5",
+      "questionText": "How many goals did France score to become champions at the 2018 World Cup?",
+      "correctAnswer": 14,
+      "explanation": "France scored a total of 14 goals throughout the 2018 World Cup to become champions."
+    }
+  ]
+}
