@@ -38,7 +38,6 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
   visible,
   showExplanation = false,
   correctOptionId,
-  onMarkAsLost,
   onOpenAdminPanel,
   currentTeam,
   otherTeams = [],
