@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next';
 import { useAppDispatch, useAppSelector } from '../../hooks/useAppStore';
 import { startNewGame } from '../../store/gameSlice';
 import { GameLogicService } from '../../services/gameLogic';
+import { soundService } from '../../utils/soundService';
 
 const { Title, Text } = Typography;
 
@@ -36,6 +37,9 @@ const ResultPage: React.FC = () => {
   }, []);
 
   useEffect(() => {
+    // Play victory sound
+    soundService.playVictory();
+    
     // Stop confetti after 10 seconds
     const timer = setTimeout(() => {
       setShowConfetti(false);

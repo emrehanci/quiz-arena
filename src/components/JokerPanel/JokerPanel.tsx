@@ -3,6 +3,7 @@ import { Card, Button, Modal, Select, Space, Alert } from 'antd';
 import { ScissorOutlined, SwapOutlined, SafetyOutlined, ThunderboltOutlined, WarningOutlined } from '@ant-design/icons';
 import { useTranslation } from 'react-i18next';
 import type { Team, Option } from '../../types';
+import { soundService } from '../../utils/soundService';
 
 interface JokerPanelProps {
   currentTeam: Team;
@@ -40,6 +41,7 @@ const JokerPanel: React.FC<JokerPanelProps> = ({
       title: t('jokers.fiftyFifty'),
       content: t('jokers.fiftyFiftyDescription'),
       onOk: () => {
+        soundService.playJoker();
         onUseFiftyFifty();
       },
     });
@@ -51,6 +53,7 @@ const JokerPanel: React.FC<JokerPanelProps> = ({
 
   const handleTransferConfirm = () => {
     if (selectedTeamId) {
+      soundService.playJoker();
       onUseTransfer(selectedTeamId);
       setTransferModalVisible(false);
       setSelectedTeamId('');
@@ -63,6 +66,7 @@ const JokerPanel: React.FC<JokerPanelProps> = ({
 
   const handleShieldConfirm = () => {
     if (selectedOptionId) {
+      soundService.playJoker();
       onUseShield(selectedOptionId);
       setShieldModalVisible(false);
       setSelectedOptionId('');

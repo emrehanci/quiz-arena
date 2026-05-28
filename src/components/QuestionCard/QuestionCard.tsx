@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Modal, Button, Radio, Space, Alert } from 'antd';
 import { SettingOutlined, QuestionCircleOutlined, CheckCircleOutlined, CloseCircleOutlined, SafetyOutlined, DeleteOutlined, TrophyOutlined } from '@ant-design/icons';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 import type { Question, Option, Team } from '../../types';
 import Timer from '../Timer/Timer';
 import JokerPanel from '../JokerPanel/JokerPanel';
+import { soundService } from '../../utils/soundService';
 
 interface QuestionCardProps {
   question: Question;
@@ -48,6 +49,13 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
 }) => {
   const { t } = useTranslation();
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
+
+  // Play open sound when question becomes visible
+  useEffect(() => {
+    if (visible && !showExplanation) {
+      soundService.playOpen();
+    }
+  }, [visible, showExplanation]);
 
   const handleConfirm = () => {
     if (selectedOption && selectedOption !== shieldedOptionId) {

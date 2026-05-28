@@ -8,6 +8,7 @@ import { useAppDispatch, useAppSelector } from '../../hooks/useAppStore';
 import { addTeam, removeTeam, setPhase } from '../../store/gameSlice';
 import { createTeam } from '../../utils/helpers';
 import { GamePhase } from '../../types';
+import { soundService } from '../../utils/soundService';
 
 const { Title } = Typography;
 
@@ -41,6 +42,9 @@ const TeamSetupPage: React.FC = () => {
       message.error(t('teamSetup.minTeamsRequired'));
       return;
     }
+
+    // Play start sound
+    soundService.playStart();
 
     dispatch(setPhase(GamePhase.BOARD));
     navigate('/game');

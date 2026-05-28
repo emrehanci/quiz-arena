@@ -31,6 +31,7 @@ import {
 import { GameLogicService } from '../../services/gameLogic';
 import { MAX_WRONG_ATTEMPTS } from '../../constants';
 import { GamePhase } from '../../types';
+import { soundService } from '../../utils/soundService';
 import Board from '../../components/Board/Board';
 import Scoreboard from '../../components/Scoreboard/Scoreboard';
 import QuestionCard from '../../components/QuestionCard/QuestionCard';
@@ -185,6 +186,9 @@ const GameBoardPage: React.FC = () => {
     setShowExplanation(true);
     dispatch(pauseTimer());
     message.success(t('question.correctAnswer'));
+    
+    // Play success sound
+    soundService.playSuccess();
 
     // Check if team can continue with updated consecutive count
     // Skip this check for transferred questions (turn already returned to transferrer)
@@ -248,6 +252,9 @@ const GameBoardPage: React.FC = () => {
       dispatch(pauseTimer());
       message.error(t('question.wrongAnswer'));
       
+      // Play fail sound
+      soundService.playFail();
+      
       // Transfer failed, return to the team that transferred (transferredFromTeamId)
       const transferrerTeamIndex = teams.findIndex(t => t.id === activeQuestion.transferredFromTeamId);
       if (transferrerTeamIndex !== -1) {
@@ -293,6 +300,9 @@ const GameBoardPage: React.FC = () => {
       dispatch(pauseTimer());
       message.error(t('question.wrongAnswer') + ' - Question lost!');
       
+      // Play fail sound
+      soundService.playFail();
+      
       // Shield: team continues (turn stays)
       // Fifty-Fifty or 2nd wrong: move to next team
       if (!shieldWasUsed) {
@@ -308,6 +318,9 @@ const GameBoardPage: React.FC = () => {
       // First wrong attempt - eliminate option and pass to next team
       // Question stays active for next team
       message.warning(t('question.wrongAnswer') + ' - Next team\'s turn!');
+      
+      // Play fail sound
+      soundService.playFail();
       
       // Calculate next team index and reset their consecutive count
       // When a team receives a question from another team, their streak is reset
