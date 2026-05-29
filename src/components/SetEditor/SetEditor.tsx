@@ -483,6 +483,8 @@ const QuestionEditorModal: React.FC<QuestionEditorModalProps> = ({
       ],
       correctOptionId: 'a',
       explanation: '',
+      media: undefined,
+      explanationMedia: undefined,
     }
   );
 
@@ -561,6 +563,177 @@ const QuestionEditorModal: React.FC<QuestionEditorModalProps> = ({
             rows={3}
           />
         </Form.Item>
+
+        {/* Question Media */}
+        <Card title="Question Media (Optional)" size="small" className="mb-4">
+          <Form.Item label="Media Type">
+            <Select
+              value={questionData.media?.type || 'none'}
+              onChange={value => {
+                if (value === 'none') {
+                  setQuestionData({ ...questionData, media: undefined });
+                } else {
+                  setQuestionData({
+                    ...questionData,
+                    media: {
+                      type: value as 'image' | 'audio' | 'video',
+                      url: questionData.media?.url || '',
+                      autoplay: false,
+                    },
+                  });
+                }
+              }}
+            >
+              <Select.Option value="none">No Media</Select.Option>
+              <Select.Option value="image">Image</Select.Option>
+              <Select.Option value="audio">Audio</Select.Option>
+              <Select.Option value="video">Video</Select.Option>
+            </Select>
+          </Form.Item>
+
+          {questionData.media && (
+            <>
+              <Form.Item label="Media URL" required>
+                <Input
+                  value={questionData.media.url}
+                  onChange={e =>
+                    setQuestionData({
+                      ...questionData,
+                      media: { ...questionData.media!, url: e.target.value },
+                    })
+                  }
+                  placeholder="https://example.com/media.jpg"
+                />
+              </Form.Item>
+
+              {questionData.media.type === 'video' && (
+                <Form.Item label="Thumbnail URL (Optional)">
+                  <Input
+                    value={questionData.media.thumbnailUrl || ''}
+                    onChange={e =>
+                      setQuestionData({
+                        ...questionData,
+                        media: { ...questionData.media!, thumbnailUrl: e.target.value },
+                      })
+                    }
+                    placeholder="https://example.com/thumbnail.jpg"
+                  />
+                </Form.Item>
+              )}
+
+              {(questionData.media.type === 'audio' || questionData.media.type === 'video') && (
+                <Form.Item label="Autoplay">
+                  <Switch
+                    checked={questionData.media.autoplay}
+                    onChange={checked =>
+                      setQuestionData({
+                        ...questionData,
+                        media: { ...questionData.media!, autoplay: checked },
+                      })
+                    }
+                  />
+                </Form.Item>
+              )}
+            </>
+          )}
+        </Card>
+
+        {/* Explanation Media */}
+        <Card title="Explanation Media (Optional)" size="small" className="mb-4">
+          <Form.Item label="Media Type">
+            <Select
+              value={questionData.explanationMedia?.type || 'none'}
+              onChange={value => {
+                if (value === 'none') {
+                  setQuestionData({ ...questionData, explanationMedia: undefined });
+                } else {
+                  setQuestionData({
+                    ...questionData,
+                    explanationMedia: {
+                      type: value as 'image' | 'audio',
+                      url: questionData.explanationMedia?.url || '',
+                      autoplay: false,
+                    },
+                  });
+                }
+              }}
+            >
+              <Select.Option value="none">No Media</Select.Option>
+              <Select.Option value="image">Image</Select.Option>
+              <Select.Option value="audio">Audio</Select.Option>
+            </Select>
+          </Form.Item>
+
+          {questionData.explanationMedia && (
+            <>
+              <Form.Item label="Media URL" required>
+                <Input
+                  value={questionData.explanationMedia.url}
+                  onChange={e =>
+                    setQuestionData({
+                      ...questionData,
+                      explanationMedia: { ...questionData.explanationMedia!, url: e.target.value },
+                    })
+                  }
+                  placeholder="https://example.com/explanation.jpg"
+                />
+              </Form.Item>
+
+              {questionData.explanationMedia.type === 'audio' && (
+                <Form.Item label="Autoplay">
+                  <Switch
+                    checked={questionData.explanationMedia.autoplay}
+                    onChange={checked =>
+                      setQuestionData({
+                        ...questionData,
+                        explanationMedia: { ...questionData.explanationMedia!, autoplay: checked },
+                      })
+                    }
+                  />
+                </Form.Item>
+              )}
+            </>
+          )}
+        </Card>
+
+        {/* Option Media */}
+        <Card title="Option Media (Optional)" size="small">
+          <Space direction="vertical" className="w-full">
+            {questionData.options.map((option, index) => (
+              <div key={option.id} className="border p-3 rounded">
+                <div className="font-bold mb-2">Option {option.id.toUpperCase()}: {option.text || '(empty)'}</div>
+                <Form.Item label="Image URL" className="mb-2">
+                  <Input
+                    value={option.imageUrl || ''}
+                    onChange={e =>
+                      setQuestionData({
+                        ...questionData,
+                        options: questionData.options.map((opt, i) =>
+                          i === index ? { ...opt, imageUrl: e.target.value } : opt
+                        ),
+                      })
+                    }
+                    placeholder="https://example.com/option-image.jpg"
+                  />
+                </Form.Item>
+                <Form.Item label="Audio URL" className="mb-0">
+                  <Input
+                    value={option.audioUrl || ''}
+                    onChange={e =>
+                      setQuestionData({
+                        ...questionData,
+                        options: questionData.options.map((opt, i) =>
+                          i === index ? { ...opt, audioUrl: e.target.value } : opt
+                        ),
+                      })
+                    }
+                    placeholder="https://example.com/option-audio.mp3"
+                  />
+                </Form.Item>
+              </div>
+            ))}
+          </Space>
+        </Card>
       </Form>
     </Modal>
   );

@@ -23,8 +23,9 @@
   "home": {
     "title": "Willkommen bei Quiz Arena",
     "startNewGame": "Neues Spiel starten",
-    "continueGame": "Spiel fortsetzen",
-    "manageSet": "Sets verwalten",
+    "continueGame": "Spiel fortsetzen",    "resetGame": "Spiel zurücksetzen",
+    "resetGameConfirmTitle": "Spiel zurücksetzen?",
+    "resetGameConfirmMessage": "Sind Sie sicher, dass Sie das aktuelle Spiel zurücksetzen möchten? Alle Fortschritte gehen verloren und Sie sehen die Ergebnisseite nicht.",    "manageSet": "Sets verwalten",
     "howToPlay": "Wie spielt man?",
     "selectLanguage": "Sprache auswählen",
     "noActiveGame": "Kein aktives Spiel"

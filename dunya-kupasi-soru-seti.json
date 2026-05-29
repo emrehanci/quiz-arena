@@ -53,8 +53,26 @@
               { "id": "d", "text": "Ersun Yanal" }
             ],
             "correctOptionId": "b",
-            "explanation": "2002 Dünya Kupası'nda Türkiye'yi Şenol Güneş çalıştırmıştır."
-          }
+            "explanation": "2002 Dünya Kupası'nda Türkiye'yi Şenol Güneş çalıştırmıştır."          },
+          {
+            "id": "turkiye-300-2",
+            "categoryId": "turkiye",
+            "point": 300,
+            "questionText": "Videoyu izleyin: Dünya Kupası tarihinin en hızlı golünü kim attı?",
+            "media": {
+              "type": "video",
+              "url": "https://www.youtube.com/watch?v=yP05j-5gmfE",
+              "thumbnailUrl": "https://img.youtube.com/vi/yP05j-5gmfE/maxresdefault.jpg",
+              "autoplay": false
+            },
+            "options": [
+              { "id": "a", "text": "Hakan Şükür" },
+              { "id": "b", "text": "Emre Belözoğlu" },
+              { "id": "c", "text": "İlhan Mansız" },
+              { "id": "d", "text": "Okan Buruk" }
+            ],
+            "correctOptionId": "a",
+            "explanation": "Hakan Şükür 2002 Dünya Kupası 3'üncülük maçında Güney Kore'ye karşı sadece 11 saniyede gol atarak Dünya Kupası tarihinin en hızlı gol rekoru sahibi olmuştur."          }
         ],
         "400": [
           {
@@ -139,8 +157,25 @@
               { "id": "d", "text": "8" }
             ],
             "correctOptionId": "c",
-            "explanation": "Brezilya 7 kez finalde yer almıştır (1950, 1958, 1962, 1970, 1994, 1998, 2002)."
-          }
+            "explanation": "Brezilya 7 kez finalde yer almıştır (1950, 1958, 1962, 1970, 1994, 1998, 2002)."          },
+          {
+            "id": "brezilya-300-2",
+            "categoryId": "brezilya",
+            "point": 300,
+            "questionText": "Sesi dinleyin: Konuşan efsanevi Brezilyali futbolcu kimdir?",
+            "media": {
+              "type": "audio",
+              "url": "https://www.example.com/pele-interview.mp3",
+              "autoplay": true
+            },
+            "options": [
+              { "id": "a", "text": "Pelé" },
+              { "id": "b", "text": "Ronaldo" },
+              { "id": "c", "text": "Ronaldinho" },
+              { "id": "d", "text": "Romário" }
+            ],
+            "correctOptionId": "a",
+            "explanation": "Bu ses Pelé'ye aittir. 3 kez Dünya Kupası kazanan (1958, 1962, 1970) ve tüm zamanların en büyük futbolcularından biri olarak kabul edilen efsanevi Brezilyali futbolcu."          }
         ],
         "400": [
           {
@@ -226,6 +261,26 @@
             ],
             "correctOptionId": "d",
             "explanation": "Yugoslavya 1930 Dünya Kupası'nda 4. olmuştur."
+          },
+          {
+            "id": "sirbistan-300-2",
+            "categoryId": "sirbistan",
+            "point": 300,
+            "questionText": "Videoyu izleyin: 2006 Dünya Kupası'nda bu mükemmel uzak mesafe golü kim attı?",
+            "media": {
+              "type": "video",
+              "url": "https://www.youtube.com/watch?v=AnXh3XR9zyM",
+              "thumbnailUrl": "https://img.youtube.com/vi/AnXh3XR9zyM/maxresdefault.jpg",
+              "autoplay": false
+            },
+            "options": [
+              { "id": "a", "text": "Dejan Stanković" },
+              { "id": "b", "text": "Nemanja Vidić" },
+              { "id": "c", "text": "Branislav Ivanović" },
+              { "id": "d", "text": "Aleksandar Kolarov" }
+            ],
+            "correctOptionId": "a",
+            "explanation": "Dejan Stanković 2006 Dünya Kupası'nda Sırbistan-Karadağ adına inanılmaz bir uzak mesafe vole gol attı."
           }
         ],
         "400": [
@@ -311,8 +366,26 @@
               { "id": "d", "text": "Mesut Özil" }
             ],
             "correctOptionId": "b",
-            "explanation": "Mario Götze uzatmalarda attığı golle Almanya'yı şampiyon yaptı."
-          }
+            "explanation": "Mario Götze uzatmalarda attığı golle Almanya'yı şampiyon yaptı."          },
+          {
+            "id": "almanya-300-2",
+            "categoryId": "almanya",
+            "point": 300,
+            "questionText": "Videoyu izleyin: Bu tarihi 2014 Dünya Kupası yarı final maçının skor neydi?",
+            "media": {
+              "type": "video",
+              "url": "https://www.youtube.com/watch?v=RRbPm8m8Cds",
+              "thumbnailUrl": "https://img.youtube.com/vi/RRbPm8m8Cds/maxresdefault.jpg",
+              "autoplay": false
+            },
+            "options": [
+              { "id": "a", "text": "Almanya 5-1 Brezilya" },
+              { "id": "b", "text": "Almanya 6-0 Brezilya" },
+              { "id": "c", "text": "Almanya 7-1 Brezilya" },
+              { "id": "d", "text": "Almanya 8-0 Brezilya" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Almanya, 2014 Dünya Kupası yarı finalinde Brezilya'yı 7-1 mağlup ederek futbol tarihinin en şok edici sonuçlarından birini yarattı. Bu maç 'Mineirazo' olarak bilinir."          }
         ],
         "400": [
           {
@@ -397,8 +470,26 @@
               { "id": "d", "text": "Hollanda" }
             ],
             "correctOptionId": "b",
-            "explanation": "Fransa 1998 finalinde ev sahipliğinde Brezilya'yı 3-0 yenerek ilk kez şampiyon oldu."
-          }
+            "explanation": "Fransa 1998 finalinde ev sahipliğinde Brezilya'yı 3-0 yenerek ilk kez şampiyon oldu."          },
+          {
+            "id": "fransa-300-2",
+            "categoryId": "fransa",
+            "point": 300,
+            "questionText": "Videoyu izleyin: Zinedine Zidane 2006 Dünya Kupası finalinde ne yaptı?",
+            "media": {
+              "type": "video",
+              "url": "https://www.youtube.com/watch?v=zAjWi663kXc",
+              "thumbnailUrl": "https://img.youtube.com/vi/zAjWi663kXc/maxresdefault.jpg",
+              "autoplay": false
+            },
+            "options": [
+              { "id": "a", "text": "Penaltı golü attı" },
+              { "id": "b", "text": "Materazzi'ye kafa attı ve kırmızı kart gördü" },
+              { "id": "c", "text": "Asist yaptı" },
+              { "id": "d", "text": "Penaltı kurtardı" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "Profesyonel kariyerindeki son maçında Zidane, Marco Materazzi'ye kafa atarak kırmızı kart gördü. Fransa finali penaltılarla kaybetti."          }
         ],
         "400": [
           {
@@ -483,8 +574,26 @@
               { "id": "d", "text": "2002 ve 2006" }
             ],
             "correctOptionId": "b",
-            "explanation": "İtalya 1934 ve 1938'de üst üste şampiyon olmuştur."
-          }
+            "explanation": "İtalya 1934 ve 1938'de üst üste şampiyon olmuştur."          },
+          {
+            "id": "italya-300-2",
+            "categoryId": "italya",
+            "point": 300,
+            "questionText": "Videoyu izleyin: İtalya'yı 2006 Dünya Kupası finaline taşıyan bu kritik golü kim attı?",
+            "media": {
+              "type": "video",
+              "url": "https://www.youtube.com/watch?v=QsJmQuTP1ao",
+              "thumbnailUrl": "https://img.youtube.com/vi/QsJmQuTP1ao/maxresdefault.jpg",
+              "autoplay": false
+            },
+            "options": [
+              { "id": "a", "text": "Francesco Totti" },
+              { "id": "b", "text": "Fabio Grosso" },
+              { "id": "c", "text": "Andrea Pirlo" },
+              { "id": "d", "text": "Luca Toni" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "Fabio Grosso, 2006 yarı finalinde Almanya'ya karşı son dakikada gol atarak İtalya'yı finale taşıdı ve İtalya şampiyon oldu."          }
         ],
         "400": [
           {
@@ -569,8 +678,26 @@
               { "id": "d", "text": "Xavi Hernández" }
             ],
             "correctOptionId": "c",
-            "explanation": "Andrés Iniesta uzatmanın 116. dakikasında attığı golle İspanya'yı şampiyon yaptı."
-          }
+            "explanation": "Andrés Iniesta uzatmanın 116. dakikasında attığı golle İspanya'yı şampiyon yaptı."          },
+          {
+            "id": "ispanya-300-2",
+            "categoryId": "ispanya",
+            "point": 300,
+            "questionText": "Videoyu izleyin: İspanya'ya 2010 Dünya Kupası'nı kazandıran bu ikonik golü kim attı?",
+            "media": {
+              "type": "video",
+              "url": "https://www.youtube.com/watch?v=_Umc1exM1DM",
+              "thumbnailUrl": "https://img.youtube.com/vi/_Umc1exM1DM/maxresdefault.jpg",
+              "autoplay": false
+            },
+            "options": [
+              { "id": "a", "text": "Xavi Hernández" },
+              { "id": "b", "text": "David Villa" },
+              { "id": "c", "text": "Andrés Iniesta" },
+              { "id": "d", "text": "Cesc Fàbregas" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Andrés Iniesta, Hollanda'ya karşı uzatmanın 116. dakikasında galibiyet golünü atarak İspanya'ya ilk Dünya Kupası şampiyonluğunu kazandırdı."          }
         ],
         "400": [
           {
@@ -655,8 +782,26 @@
               { "id": "d", "text": "Rui Costa" }
             ],
             "correctOptionId": "b",
-            "explanation": "Eusébio 1966'da 9 golle gol kralı oldu ve Portekiz'i 3. lüğe taşıdı."
-          }
+            "explanation": "Eusébio 1966'da 9 golle gol kralı oldu ve Portekiz'i 3. lüğe taşıdı."          },
+          {
+            "id": "portekiz-300-2",
+            "categoryId": "portekiz",
+            "point": 300,
+            "questionText": "Videoyu izleyin: 2018 Dünya Kupası'nda İspanya'ya karşı bu muhteşem serbest vuruç hat-trick golünü kim attı?",
+            "media": {
+              "type": "video",
+              "url": "https://www.youtube.com/watch?v=sYwb6NvTn-E",
+              "thumbnailUrl": "https://img.youtube.com/vi/sYwb6NvTn-E/maxresdefault.jpg",
+              "autoplay": false
+            },
+            "options": [
+              { "id": "a", "text": "Cristiano Ronaldo" },
+              { "id": "b", "text": "Ricardo Quaresma" },
+              { "id": "c", "text": "João Moutinho" },
+              { "id": "d", "text": "André Silva" }
+            ],
+            "correctOptionId": "a",
+            "explanation": "Cristiano Ronaldo, 2018 Dünya Kupası'nda İspanya'ya karşı 3-3 biten maçta hat-trick yaparak son golü mükemmel bir serbest vuruçla attı."          }
         ],
         "400": [
           {
@@ -741,8 +886,26 @@
               { "id": "d", "text": "İtalya" }
             ],
             "correctOptionId": "c",
-            "explanation": "Maradona 1986 çeyrek finalinde İngiltere'ye karşı eliyle ve ardından solo bir golle 2 gol attı."
-          }
+            "explanation": "Maradona 1986 çeyrek finalinde İngiltere'ye karşı eliyle ve ardından solo bir golle 2 gol attı."          },
+          {
+            "id": "arjantin-300-2",
+            "categoryId": "arjantin",
+            "point": 300,
+            "questionText": "Videoyu izleyin: Maradona'nın bu efsanevi golünün adı nedir?",
+            "media": {
+              "type": "video",
+              "url": "https://www.youtube.com/watch?v=1wVho3I0NtU",
+              "thumbnailUrl": "https://img.youtube.com/vi/1wVho3I0NtU/maxresdefault.jpg",
+              "autoplay": false
+            },
+            "options": [
+              { "id": "a", "text": "Tanrının Eli" },
+              { "id": "b", "text": "Yüzyılın Golü" },
+              { "id": "c", "text": "Maradona'nın Sihriy" },
+              { "id": "d", "text": "Solo Gol" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "Bu 'Yüzyılın Golü'dür - Maradona 1986 çeyrek finalinde beş İngiliz oyuncuyu geçerek Dünya Kupası tarihinin en büyük gollerinden birini attı."          }
         ],
         "400": [
           {
@@ -827,8 +990,25 @@
               { "id": "d", "text": "Dünya Şampiyonluk Kupası" }
             ],
             "correctOptionId": "b",
-            "explanation": "Dünya Kupası kupası, FIFA'nın kurucularından Jules Rimet'nin adını taşır."
-          }
+            "explanation": "Dünya Kupası kupası, FIFA'nın kurucularından Jules Rimet'nin adını taşır."          },
+          {
+            "id": "genel-300-2",
+            "categoryId": "genel",
+            "point": 300,
+            "questionText": "Sesi dinleyin: Bu ünlü Dünya Kupası marşının adı nedir?",
+            "media": {
+              "type": "audio",
+              "url": "https://www.example.com/waka-waka.mp3",
+              "autoplay": true
+            },
+            "options": [
+              { "id": "a", "text": "Waka Waka (This Time for Africa)" },
+              { "id": "b", "text": "We Are One (Ole Ola)" },
+              { "id": "c", "text": "La La La" },
+              { "id": "d", "text": "Live It Up" }
+            ],
+            "correctOptionId": "a",
+            "explanation": "Shakira'nın 'Waka Waka (This Time for Africa)' şarkısı, Güney Afrika'da düzenlenen 2010 FIFA Dünya Kupası'nın resmi marşıydı."          }
         ],
         "400": [
           {

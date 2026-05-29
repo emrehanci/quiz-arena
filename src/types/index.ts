@@ -1,7 +1,17 @@
+// Media type for questions
+export interface Media {
+  type: 'image' | 'audio' | 'video';
+  url: string;
+  thumbnailUrl?: string; // For video preview
+  autoplay?: boolean; // Auto-play audio/video
+}
+
 // Option model for question choices
 export interface Option {
   id: string;
   text: string;
+  imageUrl?: string; // Optional image for the option
+  audioUrl?: string; // Optional audio for the option
 }
 
 // Regular question model
@@ -13,6 +23,10 @@ export interface Question {
   options: Option[];
   correctOptionId: string;
   explanation: string;
+  // Optional media for the question
+  media?: Media;
+  // Optional media for the explanation
+  explanationMedia?: Media;
 }
 
 // Final round question model

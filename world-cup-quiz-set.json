@@ -54,6 +54,26 @@
             ],
             "correctOptionId": "b",
             "explanation": "Şenol Güneş coached Turkey at the 2002 World Cup."
+          },
+          {
+            "id": "turkey-300-2",
+            "categoryId": "turkey",
+            "point": 300,
+            "questionText": "Watch the video: Who scored the fastest goal in World Cup history?",
+            "media": {
+              "type": "video",
+              "url": "https://www.youtube.com/watch?v=yP05j-5gmfE",
+              "thumbnailUrl": "https://img.youtube.com/vi/yP05j-5gmfE/maxresdefault.jpg",
+              "autoplay": false
+            },
+            "options": [
+              { "id": "a", "text": "Hakan Şükür" },
+              { "id": "b", "text": "Emre Belözoğlu" },
+              { "id": "c", "text": "İlhan Mansız" },
+              { "id": "d", "text": "Okan Buruk" }
+            ],
+            "correctOptionId": "a",
+            "explanation": "Hakan Şükür scored in just 11 seconds against South Korea in the 2002 World Cup third-place match, setting the record for the fastest goal in World Cup history."
           }
         ],
         "400": [
@@ -140,6 +160,25 @@
             ],
             "correctOptionId": "c",
             "explanation": "Brazil has reached the final 7 times (1950, 1958, 1962, 1970, 1994, 1998, 2002)."
+          },
+          {
+            "id": "brazil-300-2",
+            "categoryId": "brazil",
+            "point": 300,
+            "questionText": "Listen to the audio: Which legendary Brazilian player is speaking?",
+            "media": {
+              "type": "audio",
+              "url": "https://www.example.com/pele-interview.mp3",
+              "autoplay": true
+            },
+            "options": [
+              { "id": "a", "text": "Pelé" },
+              { "id": "b", "text": "Ronaldo" },
+              { "id": "c", "text": "Ronaldinho" },
+              { "id": "d", "text": "Romário" }
+            ],
+            "correctOptionId": "a",
+            "explanation": "This is Pelé, the legendary Brazilian footballer who won three World Cups (1958, 1962, 1970) and is considered one of the greatest players of all time."
           }
         ],
         "400": [
@@ -226,6 +265,26 @@
             ],
             "correctOptionId": "d",
             "explanation": "Yugoslavia finished 4th in the 1930 World Cup."
+          },
+          {
+            "id": "serbia-300-2",
+            "categoryId": "serbia",
+            "point": 300,
+            "questionText": "Watch the video: Who scored this spectacular long-range goal at the 2006 World Cup?",
+            "media": {
+              "type": "video",
+              "url": "https://www.youtube.com/watch?v=AnXh3XR9zyM",
+              "thumbnailUrl": "https://img.youtube.com/vi/AnXh3XR9zyM/maxresdefault.jpg",
+              "autoplay": false
+            },
+            "options": [
+              { "id": "a", "text": "Dejan Stanković" },
+              { "id": "b", "text": "Nemanja Vidić" },
+              { "id": "c", "text": "Branislav Ivanović" },
+              { "id": "d", "text": "Aleksandar Kolarov" }
+            ],
+            "correctOptionId": "a",
+            "explanation": "Dejan Stanković scored an incredible long-range volley for Serbia and Montenegro at the 2006 World Cup."
           }
         ],
         "400": [
@@ -312,6 +371,26 @@
             ],
             "correctOptionId": "b",
             "explanation": "Mario Götze scored the winning goal in extra time to make Germany champions."
+          },
+          {
+            "id": "germany-300-2",
+            "categoryId": "germany",
+            "point": 300,
+            "questionText": "Watch the video: What was the final score of this historic 2014 World Cup semi-final match?",
+            "media": {
+              "type": "video",
+              "url": "https://www.youtube.com/watch?v=RRbPm8m8Cds",
+              "thumbnailUrl": "https://img.youtube.com/vi/RRbPm8m8Cds/maxresdefault.jpg",
+              "autoplay": false
+            },
+            "options": [
+              { "id": "a", "text": "Germany 5-1 Brazil" },
+              { "id": "b", "text": "Germany 6-0 Brazil" },
+              { "id": "c", "text": "Germany 7-1 Brazil" },
+              { "id": "d", "text": "Germany 8-0 Brazil" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Germany demolished Brazil 7-1 in the 2014 World Cup semi-final in one of the most shocking results in football history, known as the 'Mineirazo'."
           }
         ],
         "400": [
@@ -398,6 +477,26 @@
             ],
             "correctOptionId": "b",
             "explanation": "France defeated Brazil 3-0 at home in the 1998 final to become champions for the first time."
+          },
+          {
+            "id": "france-300-2",
+            "categoryId": "france",
+            "point": 300,
+            "questionText": "Watch the video: What did Zinedine Zidane do in the 2006 World Cup final?",
+            "media": {
+              "type": "video",
+              "url": "https://www.youtube.com/watch?v=zAjWi663kXc",
+              "thumbnailUrl": "https://img.youtube.com/vi/zAjWi663kXc/maxresdefault.jpg",
+              "autoplay": false
+            },
+            "options": [
+              { "id": "a", "text": "Scored a penalty" },
+              { "id": "b", "text": "Headbutted Materazzi and got a red card" },
+              { "id": "c", "text": "Made an assist" },
+              { "id": "d", "text": "Saved a penalty" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "In his last professional match, Zidane headbutted Marco Materazzi and received a red card. France lost the final on penalties."
           }
         ],
         "400": [
@@ -484,6 +583,26 @@
             ],
             "correctOptionId": "b",
             "explanation": "Italy won the World Cup consecutively in 1934 and 1938."
+          },
+          {
+            "id": "italy-300-2",
+            "categoryId": "italy",
+            "point": 300,
+            "questionText": "Watch the video: Who scored this crucial goal that sent Italy to the 2006 World Cup final?",
+            "media": {
+              "type": "video",
+              "url": "https://www.youtube.com/watch?v=QsJmQuTP1ao",
+              "thumbnailUrl": "https://img.youtube.com/vi/QsJmQuTP1ao/maxresdefault.jpg",
+              "autoplay": false
+            },
+            "options": [
+              { "id": "a", "text": "Francesco Totti" },
+              { "id": "b", "text": "Fabio Grosso" },
+              { "id": "c", "text": "Andrea Pirlo" },
+              { "id": "d", "text": "Luca Toni" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "Fabio Grosso scored in the last minute of the 2006 semi-final against Germany to send Italy to the final, which they won."
           }
         ],
         "400": [
@@ -570,6 +689,26 @@
             ],
             "correctOptionId": "c",
             "explanation": "Andrés Iniesta scored in the 116th minute of extra time to make Spain champions."
+          },
+          {
+            "id": "spain-300-2",
+            "categoryId": "spain",
+            "point": 300,
+            "questionText": "Watch the video: Who scored this iconic goal that won Spain the 2010 World Cup?",
+            "media": {
+              "type": "video",
+              "url": "https://www.youtube.com/watch?v=_Umc1exM1DM",
+              "thumbnailUrl": "https://img.youtube.com/vi/_Umc1exM1DM/maxresdefault.jpg",
+              "autoplay": false
+            },
+            "options": [
+              { "id": "a", "text": "Xavi Hernández" },
+              { "id": "b", "text": "David Villa" },
+              { "id": "c", "text": "Andrés Iniesta" },
+              { "id": "d", "text": "Cesc Fàbregas" }
+            ],
+            "correctOptionId": "c",
+            "explanation": "Andrés Iniesta scored the winning goal in the 116th minute of extra time against Netherlands, giving Spain their first World Cup title."
           }
         ],
         "400": [
@@ -656,6 +795,26 @@
             ],
             "correctOptionId": "b",
             "explanation": "Eusébio won the Golden Boot with 9 goals in 1966 and led Portugal to third place."
+          },
+          {
+            "id": "portugal-300-2",
+            "categoryId": "portugal",
+            "point": 300,
+            "questionText": "Watch the video: Who scored this spectacular free-kick hat-trick goal against Spain at the 2018 World Cup?",
+            "media": {
+              "type": "video",
+              "url": "https://www.youtube.com/watch?v=sYwb6NvTn-E",
+              "thumbnailUrl": "https://img.youtube.com/vi/sYwb6NvTn-E/maxresdefault.jpg",
+              "autoplay": false
+            },
+            "options": [
+              { "id": "a", "text": "Cristiano Ronaldo" },
+              { "id": "b", "text": "Ricardo Quaresma" },
+              { "id": "c", "text": "João Moutinho" },
+              { "id": "d", "text": "André Silva" }
+            ],
+            "correctOptionId": "a",
+            "explanation": "Cristiano Ronaldo scored a magnificent free-kick to complete his hat-trick in a 3-3 draw against Spain at the 2018 World Cup."
           }
         ],
         "400": [
@@ -742,6 +901,26 @@
             ],
             "correctOptionId": "c",
             "explanation": "Maradona scored 2 goals against England in the 1986 quarter-final, one with his hand and then a solo goal."
+          },
+          {
+            "id": "argentina-300-2",
+            "categoryId": "argentina",
+            "point": 300,
+            "questionText": "Watch the video: What is the name of this legendary goal scored by Maradona?",
+            "media": {
+              "type": "video",
+              "url": "https://www.youtube.com/watch?v=1wVho3I0NtU",
+              "thumbnailUrl": "https://img.youtube.com/vi/1wVho3I0NtU/maxresdefault.jpg",
+              "autoplay": false
+            },
+            "options": [
+              { "id": "a", "text": "Hand of God" },
+              { "id": "b", "text": "Goal of the Century" },
+              { "id": "c", "text": "Maradona's Magic" },
+              { "id": "d", "text": "The Solo Goal" }
+            ],
+            "correctOptionId": "b",
+            "explanation": "This is the 'Goal of the Century' - Maradona dribbled past five England players to score one of the greatest goals in World Cup history in the 1986 quarter-final."
           }
         ],
         "400": [
@@ -828,6 +1007,25 @@
             ],
             "correctOptionId": "b",
             "explanation": "The World Cup trophy is named after Jules Rimet, one of FIFA's founders."
+          },
+          {
+            "id": "general-300-2",
+            "categoryId": "general",
+            "point": 300,
+            "questionText": "Listen to the audio: What is the name of this famous World Cup anthem?",
+            "media": {
+              "type": "audio",
+              "url": "https://www.example.com/waka-waka.mp3",
+              "autoplay": true
+            },
+            "options": [
+              { "id": "a", "text": "Waka Waka (This Time for Africa)" },
+              { "id": "b", "text": "We Are One (Ole Ola)" },
+              { "id": "c", "text": "La La La" },
+              { "id": "d", "text": "Live It Up" }
+            ],
+            "correctOptionId": "a",
+            "explanation": "'Waka Waka (This Time for Africa)' by Shakira was the official anthem of the 2010 FIFA World Cup in South Africa."
           }
         ],
         "400": [

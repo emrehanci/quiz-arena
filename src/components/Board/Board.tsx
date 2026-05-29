@@ -55,7 +55,7 @@ const Board: React.FC<BoardProps> = ({
   };
 
   return (
-    <div className="w-full overflow-x-auto bg-white rounded-lg shadow-lg">
+    <div className="w-full overflow-x-auto rounded-lg shadow-lg">
       <div className="min-w-[800px]">
         {/* Category Headers */}
         <div className="grid grid-cols-10 gap-2 mb-2">

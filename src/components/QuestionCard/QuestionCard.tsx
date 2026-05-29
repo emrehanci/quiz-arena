@@ -256,6 +256,36 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
           )}
           <div className="bg-blue-50 p-4 rounded-lg">
             <p className="text-xl text-center">{question.questionText}</p>
+            
+            {/* Question Media */}
+            {question.media && (
+              <div className="mt-4 flex justify-center">
+                {question.media.type === 'image' && (
+                  <img
+                    src={question.media.url}
+                    alt="Question image"
+                    className="max-w-full max-h-96 rounded-lg shadow-md"
+                  />
+                )}
+                {question.media.type === 'audio' && (
+                  <audio
+                    src={question.media.url}
+                    controls
+                    autoPlay={question.media.autoplay}
+                    className="w-full max-w-md"
+                  />
+                )}
+                {question.media.type === 'video' && (
+                  <video
+                    src={question.media.url}
+                    controls
+                    autoPlay={question.media.autoplay}
+                    poster={question.media.thumbnailUrl}
+                    className="max-w-full max-h-96 rounded-lg shadow-md"
+                  />
+                )}
+              </div>
+            )}
           </div>
           <div className="text-center mt-2">
             <span className="text-lg font-semibold text-blue-600 flex items-center justify-center gap-1">
@@ -285,15 +315,36 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
                     disabled={isOptionDisabled(option.id)}
                     className="w-full"
                   >
-                    <span className="text-lg ml-2 flex items-center gap-2">
-                      {showExplanation && correctOptionId === option.id && (
-                        <CheckCircleOutlined className="text-green-600" />
+                    <div className="flex items-center gap-3">
+                      <span className="text-lg flex items-center gap-2">
+                        {showExplanation && correctOptionId === option.id && (
+                          <CheckCircleOutlined className="text-green-600" />
+                        )}
+                        {showExplanation && selectedOption === option.id && correctOptionId !== option.id && (
+                          <CloseCircleOutlined className="text-red-600" />
+                        )}
+                        {option.text}
+                      </span>
+                      
+                      {/* Option Image */}
+                      {option.imageUrl && (
+                        <img
+                          src={option.imageUrl}
+                          alt={option.text}
+                          className="max-h-16 rounded shadow-sm"
+                        />
                       )}
-                      {showExplanation && selectedOption === option.id && correctOptionId !== option.id && (
-                        <CloseCircleOutlined className="text-red-600" />
+                      
+                      {/* Option Audio */}
+                      {option.audioUrl && (
+                        <audio
+                          src={option.audioUrl}
+                          controls
+                          className="h-8"
+                          onClick={(e) => e.stopPropagation()}
+                        />
                       )}
-                      {option.text}
-                    </span>
+                    </div>
                   </Radio>
                   {option.id === shieldedOptionId && (
                     <span className="ml-4 text-xs bg-yellow-500 text-white px-2 py-1 rounded flex items-center gap-1 inline-flex">
@@ -322,7 +373,32 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
             >
               <Alert
                 message={t('question.explanation')}
-                description={question.explanation}
+                description={
+                  <div>
+                    <p>{question.explanation}</p>
+                    
+                    {/* Explanation Media */}
+                    {question.explanationMedia && (
+                      <div className="mt-3 flex justify-center">
+                        {question.explanationMedia.type === 'image' && (
+                          <img
+                            src={question.explanationMedia.url}
+                            alt="Explanation image"
+                            className="max-w-full max-h-64 rounded-lg shadow-md"
+                          />
+                        )}
+                        {question.explanationMedia.type === 'audio' && (
+                          <audio
+                            src={question.explanationMedia.url}
+                            controls
+                            autoPlay={question.explanationMedia.autoplay}
+                            className="w-full max-w-md"
+                          />
+                        )}
+                      </div>
+                    )}
+                  </div>
+                }
                 type="info"
                 showIcon
               />

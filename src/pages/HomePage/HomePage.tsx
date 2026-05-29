@@ -7,11 +7,13 @@ import {
   GlobalOutlined,
   TrophyOutlined,
   QuestionCircleOutlined,
+  ReloadOutlined,
+  ExclamationCircleOutlined,
 } from '@ant-design/icons';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useAppDispatch, useAppSelector } from '../../hooks/useAppStore';
-import { setActiveSet } from '../../store/gameSlice';
+import { setActiveSet, resetGame } from '../../store/gameSlice';
 import { setLanguage } from '../../store/settingsSlice';
 import { GamePhase } from '../../types';
 import { SUPPORTED_LANGUAGES } from '../../constants';
@@ -29,6 +31,7 @@ const HomePage: React.FC = () => {
   const [setSelectModalVisible, setSetSelectModalVisible] = useState(false);
   const [selectedSetId, setSelectedSetId] = useState<string>('');
   const [finalRoundEnabled, setFinalRoundEnabled] = useState(true);
+  const [resetModalVisible, setResetModalVisible] = useState(false);
 
   const hasActiveGame = phase !== GamePhase.NOT_STARTED && activeSetId;
 
@@ -70,6 +73,15 @@ const HomePage: React.FC = () => {
   const handleLanguageChange = (lang: string) => {
     dispatch(setLanguage(lang));
     i18n.changeLanguage(lang);
+  };
+
+  const handleResetGame = () => {
+    setResetModalVisible(true);
+  };
+
+  const confirmResetGame = () => {
+    dispatch(resetGame());
+    setResetModalVisible(false);
   };
 
   return (
@@ -128,20 +140,39 @@ const HomePage: React.FC = () => {
             </motion.div>
 
             {hasActiveGame && (
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.4 }}
-              >
-                <Button
-                  size="large"
-                  onClick={handleContinueGame}
-                  block
-                  className="h-14 text-lg"
+              <>
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.4 }}
                 >
-                  {t('home.continueGame')}
-                </Button>
-              </motion.div>
+                  <Button
+                    size="large"
+                    onClick={handleContinueGame}
+                    block
+                    className="h-14 text-lg"
+                  >
+                    {t('home.continueGame')}
+                  </Button>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.45 }}
+                >
+                  <Button
+                    danger
+                    size="large"
+                    icon={<ReloadOutlined />}
+                    onClick={handleResetGame}
+                    block
+                    className="h-14 text-lg"
+                  >
+                    {t('home.resetGame')}
+                  </Button>
+                </motion.div>
+              </>
             )}
 
             <motion.div
@@ -246,8 +277,26 @@ const HomePage: React.FC = () => {
                 ]}
               />
             </div>
-          )}
+)}
         </Space>
+      </Modal>
+
+      {/* Reset Game Confirmation Modal */}
+      <Modal
+        title={
+          <span>
+            <ExclamationCircleOutlined className="text-orange-500 mr-2" />
+            {t('home.resetGameConfirmTitle')}
+          </span>
+        }
+        open={resetModalVisible}
+        onOk={confirmResetGame}
+        onCancel={() => setResetModalVisible(false)}
+        okText={t('common.confirm')}
+        cancelText={t('common.cancel')}
+        okButtonProps={{ danger: true }}
+      >
+        <p>{t('home.resetGameConfirmMessage')}</p>
       </Modal>
     </div>
   );
