@@ -88,6 +88,13 @@ const gameSlice = createSlice({
       state.currentTeamIndex = action.payload;
     },
 
+    changeTeamFromAdmin: (state, action: PayloadAction<number>) => {
+      state.currentTeamIndex = action.payload;
+      state.teams.forEach(team => {
+        team.consecutiveCorrectCount = 0;
+      });
+    },
+
     nextTeam: (state) => {
       state.currentTeamIndex = (state.currentTeamIndex + 1) % state.teams.length;
     },
@@ -280,6 +287,7 @@ export const {
   updateTeam,
   updateMultipleTeams,
   setCurrentTeamIndex,
+  changeTeamFromAdmin,
   nextTeam,
   resetTeamConsecutiveCount,
   setActiveQuestion,

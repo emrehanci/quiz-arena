@@ -21,6 +21,7 @@ import {
   useJoker,
   resetTeamTurnJokers,
   setCurrentTeamIndex,
+  changeTeamFromAdmin,
   pauseTimer,
   resumeTimer,
   resetTimer,
@@ -593,7 +594,7 @@ const GameBoardPage: React.FC = () => {
           onClose={() => setAdminPanelVisible(false)}
           teams={teams}
           currentTeamIndex={currentTeamIndex}
-          onChangeTeam={(index) => dispatch(setCurrentTeamIndex(index))}
+          onChangeTeam={(index) => dispatch(changeTeamFromAdmin(index))}
           onPauseTimer={() => dispatch(pauseTimer())}
           onResumeTimer={() => dispatch(resumeTimer())}
           onResetTimer={() => dispatch(resetTimer())}

@@ -11,6 +11,7 @@ import gameReducer, {
   updateTeam,
   updateMultipleTeams,
   setCurrentTeamIndex,
+  changeTeamFromAdmin,
   nextTeam,
   resetTeamConsecutiveCount,
   addAnsweredQuestion,
@@ -423,6 +424,19 @@ describe('gameSlice', () => {
       const state = gameReducer(stateWithTeams, setCurrentTeamIndex(1));
       
       expect(state.currentTeamIndex).toBe(1);
+    });
+
+    it('should reset all team consecutive counts when changed from admin', () => {
+      const teams = mockTeams.map(team => ({ ...team, consecutiveCorrectCount: 2 }));
+      const state = gameReducer(
+        { ...initialState, teams },
+        changeTeamFromAdmin(1)
+      );
+
+      expect(state.currentTeamIndex).toBe(1);
+      state.teams.forEach(team => {
+        expect(team.consecutiveCorrectCount).toBe(0);
+      });
     });
   });
 
