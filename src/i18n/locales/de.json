@@ -153,7 +153,8 @@
     "deleteConfirm": "Sind Sie sicher, dass Sie dieses Set löschen möchten?",
     "validationError": "Validierungsfehler",
     "setNameRequired": "Set-Name ist erforderlich",
-    "selectFile": "Datei auswählen"
+    "selectFile": "Datei auswählen",
+    "maxSetsReached": "Maximale Anzahl an Quiz-Sets (3) erreicht."
   },
   "validation": {
     "required": "Dieses Feld ist erforderlich",

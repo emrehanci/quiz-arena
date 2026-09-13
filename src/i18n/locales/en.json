@@ -155,7 +155,8 @@
     "deleteConfirm": "Are you sure you want to delete this set?",
     "validationError": "Validation error",
     "setNameRequired": "Set name is required",
-    "selectFile": "Select File"
+    "selectFile": "Select File",
+    "maxSetsReached": "Maximum quiz set limit (3) reached."
   },
   "validation": {
     "required": "This field is required",

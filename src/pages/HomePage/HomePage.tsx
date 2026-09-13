@@ -42,6 +42,8 @@ const HomePage: React.FC = () => {
   const handleSetSelect = () => {
     const selectedSet = sets.find(s => s.id === selectedSetId);
     if (selectedSet) {
+      // Clear current question set and reset any ongoing game before loading new set
+      dispatch(resetGame());
       dispatch(setActiveSet({ 
         setId: selectedSetId, 
         finalRoundEnabled: finalRoundEnabled && selectedSet.finalRoundEnabled 

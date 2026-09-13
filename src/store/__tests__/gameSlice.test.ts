@@ -2,6 +2,7 @@ import { describe, it, expect, beforeEach } from 'vitest';
 import gameReducer, {
   setPhase,
   setActiveSet,
+  clearActiveSet,
   addTeam,
   removeTeam,
   updateTeamName,
@@ -352,6 +353,43 @@ describe('gameSlice', () => {
       
       expect(state.activeSetId).toBe('set-2');
       expect(state.isFinalRoundEnabled).toBe(false);
+    });
+
+    it('should clear ongoing game and question set data when setting a new active set', () => {
+      const ongoingState: GameState = {
+        ...initialState,
+        activeSetId: 'old-set',
+        phase: GamePhase.BOARD,
+        teams: mockTeams,
+        answeredQuestions: [{ categoryId: 'cat1', point: 100, teamId: 'team-1', answeredAt: 123 }],
+        lostQuestions: [{ categoryId: 'cat2', point: 200, teamId: 'team-2', answeredAt: 456 }],
+      };
+
+      const state = gameReducer(
+        ongoingState,
+        setActiveSet({ setId: 'new-set', finalRoundEnabled: true })
+      );
+
+      expect(state.activeSetId).toBe('new-set');
+      expect(state.phase).toBe(GamePhase.TEAM_SETUP);
+      expect(state.teams).toEqual([]);
+      expect(state.answeredQuestions).toEqual([]);
+      expect(state.lostQuestions).toEqual([]);
+    });
+
+    it('should clear active set and end ongoing competition using clearActiveSet', () => {
+      const ongoingState: GameState = {
+        ...initialState,
+        activeSetId: 'active-set',
+        phase: GamePhase.QUESTION,
+        teams: mockTeams,
+      };
+
+      const state = gameReducer(ongoingState, clearActiveSet());
+
+      expect(state.activeSetId).toBeNull();
+      expect(state.phase).toBe(GamePhase.NOT_STARTED);
+      expect(state.teams).toEqual([]);
     });
   });
 

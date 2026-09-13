@@ -5,6 +5,7 @@ export const MAX_WRONG_ATTEMPTS = 2;
 export const TOTAL_CATEGORIES = 10;
 export const POINT_VALUES = [100, 200, 300, 400, 500] as const;
 export const OPTION_COUNT = 4;
+export const MAX_SETS = 3;
 
 // Final Round constants
 export const FINAL_ROUND_QUESTION_COUNT = 5;

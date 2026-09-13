@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
 import type { SettingsState, QuizSet } from '../types';
-import { DEFAULT_LANGUAGE } from '../constants';
+import { DEFAULT_LANGUAGE, MAX_SETS } from '../constants';
 import { SetService } from '../services/setService';
 
 const initialState: SettingsState = {
@@ -18,7 +18,9 @@ const settingsSlice = createSlice({
     },
 
     addSet: (state, action: PayloadAction<QuizSet>) => {
-      state.sets.push(action.payload);
+      if (state.sets.length < MAX_SETS) {
+        state.sets.push(action.payload);
+      }
     },
 
     updateSet: (state, action: PayloadAction<QuizSet>) => {
@@ -38,7 +40,7 @@ const settingsSlice = createSlice({
       if (existingIndex !== -1) {
         // Update existing
         state.sets[existingIndex] = action.payload;
-      } else {
+      } else if (state.sets.length < MAX_SETS) {
         // Add new
         state.sets.push(action.payload);
       }

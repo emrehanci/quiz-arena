@@ -155,7 +155,8 @@
     "deleteConfirm": "Bu seti silmek istediğinizden emin misiniz?",
     "validationError": "Doğrulama hatası",
     "setNameRequired": "Set adı gereklidir",
-    "selectFile": "Dosya Seç"
+    "selectFile": "Dosya Seç",
+    "maxSetsReached": "Maksimum soru seti limitine (3) ulaşıldı."
   },
   "validation": {
     "required": "Bu alan gereklidir",

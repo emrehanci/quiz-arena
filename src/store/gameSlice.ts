@@ -39,9 +39,39 @@ const gameSlice = createSlice({
 
     // Set management
     setActiveSet: (state, action: PayloadAction<{ setId: string; finalRoundEnabled: boolean }>) => {
+      // Clear current question set state and end ongoing game/competition before loading new set
+      state.teams = [];
+      state.currentTeamIndex = 0;
+      state.activeQuestion = null;
+      state.answeredQuestions = [];
+      state.lostQuestions = [];
+      state.finalRound = {
+        currentQuestionIndex: 0,
+        answers: {},
+        isActive: false,
+      };
+      state.gameLog = [];
+
       state.activeSetId = action.payload.setId;
       state.isFinalRoundEnabled = action.payload.finalRoundEnabled;
       state.phase = GamePhase.TEAM_SETUP;
+    },
+
+    clearActiveSet: (state) => {
+      state.activeSetId = null;
+      state.phase = GamePhase.NOT_STARTED;
+      state.teams = [];
+      state.currentTeamIndex = 0;
+      state.activeQuestion = null;
+      state.answeredQuestions = [];
+      state.lostQuestions = [];
+      state.finalRound = {
+        currentQuestionIndex: 0,
+        answers: {},
+        isActive: false,
+      };
+      state.isFinalRoundEnabled = false;
+      state.gameLog = [];
     },
 
     // Team management
@@ -280,6 +310,7 @@ const gameSlice = createSlice({
 export const {
   setPhase,
   setActiveSet,
+  clearActiveSet,
   addTeam,
   removeTeam,
   updateTeamName,

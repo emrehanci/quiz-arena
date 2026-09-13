@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button, Card, Table, Typography, Space, message, Modal, Upload } from 'antd';
 import {
@@ -13,10 +13,12 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useAppDispatch, useAppSelector } from '../../hooks/useAppStore';
 import { addSet, deleteSet, importSet, updateSet } from '../../store/settingsSlice';
+import { resetGame } from '../../store/gameSlice';
 import { SetService } from '../../services/setService';
-import { hasValidationErrors, formatValidationErrors } from '../../utils/validation';
+import { formatValidationErrors } from '../../utils/validation';
 import SetEditor from '../../components/SetEditor/SetEditor';
 import type { QuizSet } from '../../types';
+import { MAX_SETS } from '../../constants';
 
 const { Title } = Typography;
 const { confirm } = Modal;
@@ -27,6 +29,7 @@ const SetManagementPage: React.FC = () => {
   const dispatch = useAppDispatch();
   
   const sets = useAppSelector(state => state.settings.sets);
+  const activeSetId = useAppSelector(state => state.game.activeSetId);
   
   const [editorVisible, setEditorVisible] = useState(false);
   const [editingSet, setEditingSet] = useState<QuizSet | null>(null);
@@ -36,6 +39,10 @@ const SetManagementPage: React.FC = () => {
   };
 
   const handleCreateSet = () => {
+    if (sets.length >= MAX_SETS) {
+      message.error(t('setManagement.maxSetsReached'));
+      return;
+    }
     setEditingSet(null);
     setEditorVisible(true);
   };
@@ -51,6 +58,10 @@ const SetManagementPage: React.FC = () => {
       dispatch(updateSet(set));
       message.success('Set updated successfully');
     } else {
+      if (sets.length >= MAX_SETS) {
+        message.error(t('setManagement.maxSetsReached'));
+        return;
+      }
       // Add new set
       dispatch(addSet(set));
       message.success('Set created successfully');
@@ -81,6 +92,14 @@ const SetManagementPage: React.FC = () => {
       }
 
       if (result.set) {
+        const isExisting = sets.some(s => s.id === result.set!.id);
+        if (!isExisting && sets.length >= MAX_SETS) {
+          message.error(t('setManagement.maxSetsReached'));
+          return false;
+        }
+
+        // Clear current question set and end ongoing game/competition to prevent bugs
+        dispatch(resetGame());
         dispatch(importSet(result.set));
         message.success(t('setManagement.importSuccess'));
       }
@@ -102,6 +121,9 @@ const SetManagementPage: React.FC = () => {
       okType: 'danger',
       cancelText: t('common.no'),
       onOk() {
+        if (activeSetId === setId) {
+          dispatch(resetGame());
+        }
         dispatch(deleteSet(setId));
         message.success('Set deleted');
       },
@@ -206,6 +228,7 @@ const SetManagementPage: React.FC = () => {
                   icon={<PlusOutlined />}
                   onClick={handleCreateSet}
                   size="large"
+                  disabled={sets.length >= MAX_SETS}
                 >
                   {t('setManagement.createSet')}
                 </Button>
@@ -213,8 +236,13 @@ const SetManagementPage: React.FC = () => {
                   accept=".json"
                   showUploadList={false}
                   beforeUpload={handleImportSet}
+                  disabled={sets.length >= MAX_SETS}
                 >
-                  <Button icon={<UploadOutlined />} size="large">
+                  <Button
+                    icon={<UploadOutlined />}
+                    size="large"
+                    disabled={sets.length >= MAX_SETS}
+                  >
                     {t('setManagement.importSet')}
                   </Button>
                 </Upload>
