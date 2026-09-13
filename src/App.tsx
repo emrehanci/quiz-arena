@@ -9,7 +9,7 @@ import GameTutorialPage from './pages/GameTutorialPage/GameTutorialPage';
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/tutorial" element={<GameTutorialPage />} />
