@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Card, Button, Modal, Select, Space, Alert } from 'antd';
-import { ScissorOutlined, SwapOutlined, SafetyOutlined, ThunderboltOutlined, WarningOutlined } from '@ant-design/icons';
+import { ScissorOutlined, SwapOutlined, SafetyOutlined, ThunderboltOutlined } from '@ant-design/icons';
 import { useTranslation } from 'react-i18next';
 import type { Team, Option } from '../../types';
 import { soundService } from '../../utils/soundService';
@@ -28,7 +28,7 @@ const JokerPanel: React.FC<JokerPanelProps> = ({
   onUseShield,
   disabled = false,
   isTransferred = false,
-  hasFiftyFiftyBeenUsed = false,
+  hasFiftyFiftyBeenUsed: _hasFiftyFiftyBeenUsed = false,
 }) => {
   const { t } = useTranslation();
   const [transferModalVisible, setTransferModalVisible] = useState(false);

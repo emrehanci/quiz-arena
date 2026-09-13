@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from 'vitest';
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import JokerPanel from '../JokerPanel';
 import { mockTeams, mockQuestion } from '../../../tests/mockData';
 
@@ -52,7 +52,7 @@ describe('JokerPanel', () => {
     
     const buttons = screen.getAllByRole('button');
     const fiftyFiftyButton = buttons.find(btn => 
-      btn.textContent?.includes('Used') || btn.disabled
+      btn.textContent?.includes('Used') || (btn as HTMLButtonElement).disabled
     );
     
     expect(fiftyFiftyButton).toBeDefined();
@@ -72,7 +72,7 @@ describe('JokerPanel', () => {
     
     const buttons = screen.getAllByRole('button');
     // At least some buttons should be disabled
-    const disabledButtons = buttons.filter(btn => btn.disabled);
+    const disabledButtons = buttons.filter(btn => (btn as HTMLButtonElement).disabled);
     expect(disabledButtons.length).toBeGreaterThan(0);
   });
 

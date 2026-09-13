@@ -59,6 +59,7 @@ describe('gameSlice', () => {
         answers: {},
         isActive: false,
       },
+      gameLog: [],
     };
   });
 
@@ -361,8 +362,8 @@ describe('gameSlice', () => {
         activeSetId: 'old-set',
         phase: GamePhase.BOARD,
         teams: mockTeams,
-        answeredQuestions: [{ categoryId: 'cat1', point: 100, teamId: 'team-1', answeredAt: 123 }],
-        lostQuestions: [{ categoryId: 'cat2', point: 200, teamId: 'team-2', answeredAt: 456 }],
+        answeredQuestions: [{ categoryId: 'cat1', point: 100, questionId: 'q-1' }],
+        lostQuestions: [{ categoryId: 'cat2', point: 200, questionId: 'q-2' }],
       };
 
       const state = gameReducer(

@@ -11,7 +11,7 @@ import { GameLogicService } from '../../services/gameLogic';
 import { soundService } from '../../utils/soundService';
 import ScoreHistoryChart from '../../components/ScoreHistoryChart/ScoreHistoryChart';
 
-const { Title, Text } = Typography;
+const { Title } = Typography;
 
 const ResultPage: React.FC = () => {
   const { t } = useTranslation();

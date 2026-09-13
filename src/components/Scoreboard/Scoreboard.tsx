@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Table } from 'antd';
-import { TrophyOutlined, FireOutlined, StarOutlined, CrownOutlined } from '@ant-design/icons';
+import { FireOutlined, StarOutlined, CrownOutlined } from '@ant-design/icons';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import type { Team } from '../../types';

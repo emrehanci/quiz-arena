@@ -1,6 +1,6 @@
 import React from 'react';
 import { Progress } from 'antd';
-import { ClockCircleOutlined, PauseCircleOutlined } from '@ant-design/icons';
+import { PauseCircleOutlined } from '@ant-design/icons';
 import { motion } from 'framer-motion';
 import { formatTime } from '../../utils/helpers';
 import { useQuestionTimer } from '../../hooks/useQuestionTimer';

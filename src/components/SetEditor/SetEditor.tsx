@@ -4,7 +4,6 @@ import {
   Form,
   Input,
   Button,
-  Tabs,
   Space,
   Card,
   InputNumber,
@@ -21,12 +20,10 @@ import {
   SaveOutlined,
   CloseOutlined,
 } from '@ant-design/icons';
-import { useTranslation } from 'react-i18next';
 import type { QuizSet, Category, Question, FinalRoundQuestion } from '../../types';
 import { v4 as uuidv4 } from 'uuid';
 
 const { TextArea } = Input;
-const { TabPane } = Tabs;
 const { Panel } = Collapse;
 
 interface SetEditorProps {
@@ -42,9 +39,6 @@ const SetEditor: React.FC<SetEditorProps> = ({
   onSave,
   initialSet,
 }) => {
-  const { t } = useTranslation();
-  const [form] = Form.useForm();
-  
   const [set, setSet] = useState<QuizSet>(
     initialSet || {
       id: uuidv4(),
@@ -56,7 +50,6 @@ const SetEditor: React.FC<SetEditorProps> = ({
     }
   );
 
-  const [editingCategory, setEditingCategory] = useState<Category | null>(null);
   const [editingQuestion, setEditingQuestion] = useState<{
     categoryId: string;
     point: number;
@@ -260,7 +253,7 @@ const SetEditor: React.FC<SetEditorProps> = ({
           }
         >
           <Collapse>
-            {set.categories.map((category, index) => (
+            {set.categories.map((category) => (
               <Panel
                 key={category.id}
                 header={
@@ -369,7 +362,7 @@ const SetEditor: React.FC<SetEditorProps> = ({
           >
             <List
               dataSource={set.finalRoundQuestions}
-              renderItem={(question, index) => (
+              renderItem={(question) => (
                 <List.Item
                   actions={[
                     <Button
